@@ -528,7 +528,7 @@ export default function App() {
     window.setTimeout(() => setQrNotice(null), 3000);
   };
 
-  const handleContactSubmit = (e: React.FormEvent) => {
+  const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (
       !contactName.trim() ||
@@ -544,8 +544,35 @@ export default function App() {
     }
     setContactSubmitting(true);
     setContactFeedback(null);
-    window.setTimeout(() => {
-      setContactSubmitting(false);
+    try {
+      const res = await fetch('send.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          name: contactName.trim(),
+          email: contactEmail.trim(),
+          subject: contactSubject.trim(),
+          message: contactMessage.trim(),
+        }).toString(),
+      });
+      const contentType = res.headers.get('content-type') || '';
+      if (res.ok && contentType.includes('application/json')) {
+        const data = await res.json();
+        if (data.status === 'success') {
+          setContactFeedback({
+            type: 'success',
+            text: data.message || 'Pesan berhasil dikirim!',
+          });
+          setContactName('');
+          setContactEmail('');
+          setContactSubject('');
+          setContactMessage('');
+          setContactSubmitting(false);
+          return;
+        }
+      }
+      throw new Error('Static fallback');
+    } catch {
       setContactFeedback({
         type: 'success',
         text: 'Pesan Anda siap dikirim! Anda juga dapat menghubungi langsung via WhatsApp atau Telegram.',
@@ -554,7 +581,9 @@ export default function App() {
       setContactEmail('');
       setContactSubject('');
       setContactMessage('');
-    }, 550);
+    } finally {
+      setContactSubmitting(false);
+    }
   };
 
   const now = new Date();
@@ -749,7 +778,7 @@ export default function App() {
         {/* ABOUT SECTION (FULL 3D) */}
         <section
           id="about"
-          className="py-28 bg-white/80 dark:bg-[#1e293b]/75 scene-3d"
+          className="py-28 bg-white/45 dark:bg-[#1e293b]/45 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-16 text-3d">
@@ -882,7 +911,7 @@ export default function App() {
         <section
           id="stats"
           ref={statsSectionRef}
-          className="py-20 bg-gradient-to-br from-[#42a5f5] to-[#1e88e5] text-white scene-3d"
+          className="py-20 bg-gradient-to-br from-[#42a5f5]/75 to-[#1e88e5]/80 backdrop-blur-[3px] text-white scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
@@ -908,7 +937,7 @@ export default function App() {
         {/* SKILLS SECTION (FULL 3D) */}
         <section
           id="skills"
-          className="py-28 bg-[#f8fafc]/85 dark:bg-[#0f172a]/85 scene-3d"
+          className="py-28 bg-[#f8fafc]/45 dark:bg-[#0f172a]/50 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-16 text-3d">
@@ -942,7 +971,7 @@ export default function App() {
         {/* PROJECTS SECTION (FULL 3D) */}
         <section
           id="projects"
-          className="py-28 bg-white/85 dark:bg-[#1e293b]/80 scene-3d"
+          className="py-28 bg-white/45 dark:bg-[#1e293b]/45 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-6 text-3d">
@@ -1029,7 +1058,7 @@ export default function App() {
         {/* EXPERIENCE SECTION (FULL 3D) */}
         <section
           id="experience"
-          className="py-28 bg-[#f8fafc]/85 dark:bg-[#0f172a]/85 scene-3d"
+          className="py-28 bg-[#f8fafc]/45 dark:bg-[#0f172a]/50 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-16 text-3d">
@@ -1075,7 +1104,7 @@ export default function App() {
         {/* SERVICES SECTION (FULL 3D) */}
         <section
           id="services"
-          className="py-28 bg-white/85 dark:bg-[#1e293b]/80 scene-3d"
+          className="py-28 bg-white/45 dark:bg-[#1e293b]/45 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-6 text-3d">
@@ -1121,7 +1150,7 @@ export default function App() {
         {/* CERTIFICATES SECTION (TRUE 3D COVERFLOW CAROUSEL WITH EXACT IMAGES) */}
         <section
           id="certificates"
-          className="py-28 bg-[#f8fafc]/85 dark:bg-[#0f172a]/85 scene-3d overflow-hidden"
+          className="py-28 bg-[#f8fafc]/45 dark:bg-[#0f172a]/50 backdrop-blur-[2px] scene-3d overflow-hidden"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-6 text-3d">
@@ -1239,7 +1268,7 @@ export default function App() {
         {/* NOW SECTION (FULL 3D) */}
         <section
           id="now"
-          className="py-28 bg-white/85 dark:bg-[#1e293b]/80 scene-3d"
+          className="py-28 bg-white/45 dark:bg-[#1e293b]/45 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-6 text-3d">
@@ -1292,7 +1321,7 @@ export default function App() {
         {/* TESTIMONIALS SECTION (FULL 3D) */}
         <section
           id="testimonials"
-          className="py-28 bg-[#f8fafc]/85 dark:bg-[#0f172a]/85 scene-3d"
+          className="py-28 bg-[#f8fafc]/45 dark:bg-[#0f172a]/50 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-6 text-3d">
@@ -1336,7 +1365,7 @@ export default function App() {
         {/* CHANGELOG SECTION (FULL 3D) */}
         <section
           id="changelog"
-          className="py-28 bg-white/85 dark:bg-[#1e293b]/80 scene-3d"
+          className="py-28 bg-white/45 dark:bg-[#1e293b]/45 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-6 text-3d">
@@ -1382,7 +1411,7 @@ export default function App() {
         {/* QR CODE SECTION (FULL 3D) */}
         <section
           id="qr"
-          className="py-20 bg-gradient-to-br from-[#e3f2fd]/90 to-[#f3e5f5]/90 dark:from-[#1e293b]/90 dark:to-[#0f172a]/90 text-center scene-3d"
+          className="py-20 bg-gradient-to-br from-[#e3f2fd]/55 to-[#f3e5f5]/55 dark:from-[#1e293b]/55 dark:to-[#0f172a]/55 backdrop-blur-[2px] text-center scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5 flex flex-col items-center gap-5">
             <h3 className="font-poppins text-2xl font-bold text-3d">
@@ -1444,7 +1473,7 @@ export default function App() {
         {/* CONTACT SECTION (FULL 3D) */}
         <section
           id="contact"
-          className="py-28 bg-[#f8fafc]/85 dark:bg-[#0f172a]/85 scene-3d"
+          className="py-28 bg-[#f8fafc]/45 dark:bg-[#0f172a]/50 backdrop-blur-[2px] scene-3d"
         >
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <h2 className="section-title-3d text-center font-poppins text-3xl sm:text-4xl font-bold mb-16 text-3d">
@@ -1637,7 +1666,7 @@ export default function App() {
         </section>
 
         {/* FOOTER (FULL 3D) */}
-        <footer className="bg-gradient-to-r from-[#1e293b] to-[#0f172a] dark:from-[#0f172a] dark:to-[#020617] text-white pt-16 pb-6">
+        <footer className="bg-gradient-to-r from-[#1e293b]/85 to-[#0f172a]/90 dark:from-[#0f172a]/88 dark:to-[#020617]/92 backdrop-blur-[3px] text-white pt-16 pb-6 scene-3d">
           <div className="w-[90%] max-w-[1200px] mx-auto px-5">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
               <div>

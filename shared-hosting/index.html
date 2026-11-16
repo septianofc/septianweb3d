@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <title>Septian Fathur Rohman | Portofolio</title>
+    <meta name="title" content="Septian Fathur Rohman - Web Developer | Portofolio" />
+    <meta name="description" content="Portofolio resmi Septian Fathur Rohman, Web Developer dan Programmer Indonesia" />
+    <meta name="keywords" content="Septian Fathur Rohman, Portfolio Septian, Web Developer Indonesia, Programmer Indonesia" />
+    <meta name="author" content="Septian Fathur Rohman" />
+    <meta name="theme-color" content="#42a5f5" />
+    <link rel="icon" type="image/png" href="https://septianfr.web.id/logo.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="https://septianfr.web.id/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://septianfr.web.id/" />
+    <meta property="og:site_name" content="Portfolio Septian Fathur Rohman" />
+    <meta property="og:title" content="Septian Fathur Rohman - Web Developer" />
+    <meta property="og:description" content="Portofolio resmi Septian Fathur Rohman." />
+    <meta property="og:image" content="https://septianfr.web.id/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@septianofc" />
+    <meta name="twitter:creator" content="@septianofc" />
+    <meta name="twitter:title" content="Septian Fathur Rohman - Web Developer" />
+    <meta name="twitter:description" content="Portofolio resmi Septian Fathur Rohman." />
+    <meta name="twitter:image" content="https://septianfr.web.id/logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  </head>
+  <body>
+    <!-- Real Three.js Dunia 3D WebGL Background -->
+    <div id="world3d-container" aria-hidden="true"></div>
+
+    <!-- 3D Reading Progress Bar -->
+    <div id="readingProgress"></div>
+
+    <!-- 3D Loading Screen -->
+    <div id="loadingScreen">
+      <div class="loading-logo-wrap animate-logo-3d">
+        <img src="https://septianfr.web.id/logo.png" alt="Loading..." class="loading-logo-img" />
+      </div>
+      <div class="loading-bar-track">
+        <div id="loadingFill" class="loading-bar-fill"></div>
+      </div>
+      <div class="loading-text">Memuat website...</div>
+    </div>
+
+    <!-- 3D Extruded Floating Header -->
+    <header id="siteHeader" class="site-header">
+      <div class="container">
+        <nav class="nav-row">
+          <a href="#home" class="brand-link scene-3d">
+            <div class="brand-coin preserve-3d">
+              <img src="https://septianfr.web.id/logo.png" alt="Profile" />
+            </div>
+            <div class="brand-text text-3d">septianfr</div>
+          </a>
+
+          <ul class="nav-list scene-3d">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+            <li><a href="#skills" class="nav-link">Keahlian</a></li>
+            <li><a href="#projects" class="nav-link">Proyek</a></li>
+            <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+            <li><a href="#certificates" class="nav-link">Sertifikat</a></li>
+            <li><a href="#services" class="nav-link">Layanan</a></li>
+            <li><a href="#now" class="nav-link">Now</a></li>
+            <li><a href="#changelog" class="nav-link">Changelog</a></li>
+            <li><a href="#contact" class="nav-link">Kontak</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button
+              type="button"
+              id="darkModeToggle"
+              class="sphere-3d dark-toggle-btn"
+              aria-label="Aktifkan Mode Gelap"
+              title="Aktifkan Mode Gelap"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+
+            <button
+              type="button"
+              id="hamburgerBtn"
+              class="hamburger-btn"
+              aria-label="Menu Navigasi"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div id="mobileDrawer" class="mobile-drawer">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Tentang Saya</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
+          <li><a href="#certificates">Sertifikat</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#now">Now</a></li>
+          <li><a href="#changelog">Changelog</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="home" class="hero-section scene-3d">
+        <div class="container">
+          <div class="card-3d hero-card" data-intensity="7" data-lift="14">
+            <div class="preserve-3d">
+              <h1 class="hero-title text-3d layer-z-2">
+                Hai, Saya
+                <span class="hero-accent text-3d-accent">Septian Fathur Rohman</span>
+              </h1>
+              <p class="hero-sub layer-z-1">
+                Seorang Pelajar SMA yang Bersemangat dalam Pemrograman Web dan Teknologi
+              </p>
+              <div class="hero-btns preserve-3d">
+                <a href="#certificates" class="btn-3d-primary">
+                  <i class="fas fa-certificate"></i>
+                  <span>Lihat Sertifikat Saya</span>
+                </a>
+                <a href="#contact" class="btn-3d-outline">
+                  <i class="fas fa-envelope"></i>
+                  <span>Hubungi Saya</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section-pad bg-sec-white scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d text-3d">Tentang Saya</h2>
+
+          <div class="about-grid">
+            <div>
+              <div class="card-3d about-img-card" data-intensity="14" data-lift="18">
+                <div class="layer-z-2">
+                  <img src="https://septianfr.web.id/logo.png" alt="About Me" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="card-3d about-bio-card" data-intensity="8" data-lift="12">
+                <h3 class="layer-z-2">Septian Fathur Rohman</h3>
+                <p class="layer-z-1">
+                  Saya adalah pelajar SMA yang sangat tertarik dengan dunia pemrograman web. Saya mulai belajar coding
+                  sejak kelas 9 SMP dan terus mengembangkan keterampilan saya dalam HTML, CSS, JavaScript, PHP, MySQL
+                  dan kode pemrograman lainnya.
+                </p>
+
+                <div class="info-grid layer-z-1">
+                  <div class="info-item">
+                    <i class="fas fa-user"></i> <strong>Usia:</strong> 17 Tahun
+                  </div>
+                  <div class="info-item">
+                    <i class="fas fa-birthday-cake"></i> <strong>Tempat/Tanggal Lahir:</strong> Bandung, 20 September 2009
+                  </div>
+                  <div class="info-item">
+                    <i class="fas fa-graduation-cap"></i> <strong>Pendidikan:</strong> SMA Negeri 1 Losarang
+                  </div>
+                  <div class="info-item">
+                    <i class="fas fa-heart"></i> <strong>Minat:</strong> Pemrograman Web, Desain UI/UX, Teknologi Terbaru
+                  </div>
+                  <div class="info-item info-item-full">
+                    <i class="fas fa-gamepad"></i> <strong>Hobi:</strong> Ngoding, Main Bola, Membuat Hal Baru
+                  </div>
+                </div>
+
+                <p class="bio-quote layer-z-1">
+                  "Saya percaya bahwa dengan teknologi, kita dapat menciptakan solusi inovatif untuk masa depan yang
+                  lebih baik."
+                </p>
+
+                <div class="social-row layer-z-2">
+                  <a href="https://wa.me/628131657036" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="sphere-3d social-btn">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a href="https://t.me/septianofc" target="_blank" rel="noreferrer" aria-label="Telegram" class="sphere-3d social-btn">
+                    <i class="fab fa-telegram"></i>
+                  </a>
+                  <a href="https://www.instagram.com/_septianfr?igsh=MTRmMDFkbzN0MnhqcQ==" target="_blank" rel="noreferrer" aria-label="Instagram" class="sphere-3d social-btn">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61579377972764&mibextid=ZbWKwL" target="_blank" rel="noreferrer" aria-label="Facebook" class="sphere-3d social-btn">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="https://github.com/septianofc" target="_blank" rel="noreferrer" aria-label="GitHub" class="sphere-3d social-btn">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATISTIK SECTION -->
+      <section id="stats" class="stats-section scene-3d">
+        <div class="container">
+          <div class="grid-4">
+            <div class="card-3d stat-3d-cube" data-intensity="14" data-lift="16">
+              <div class="stat-number font-poppins text-3d layer-z-3" data-target="8">8</div>
+              <div class="stat-label layer-z-1">Sertifikat Diperoleh</div>
+            </div>
+            <div class="card-3d stat-3d-cube" data-intensity="14" data-lift="16">
+              <div class="stat-number font-poppins text-3d layer-z-3" data-target="6">6</div>
+              <div class="stat-label layer-z-1">Proyek Selesai</div>
+            </div>
+            <div class="card-3d stat-3d-cube" data-intensity="14" data-lift="16">
+              <div class="stat-number font-poppins text-3d layer-z-3" data-target="3">3</div>
+              <div class="stat-label layer-z-1">Tahun Belajar Coding</div>
+            </div>
+            <div class="card-3d stat-3d-cube" data-intensity="14" data-lift="16">
+              <div class="stat-number font-poppins text-3d layer-z-3" data-target="10">10</div>
+              <div class="stat-label layer-z-1">Teknologi Dikuasai</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="section-pad bg-sec-slate scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d text-3d">Keahlian Saya</h2>
+
+          <div class="grid-3">
+            <div class="card-3d skill-card" data-intensity="14" data-lift="16">
+              <div class="skill-top-bar"></div>
+              <div class="skill-icon layer-z-3"><i class="fab fa-html5"></i></div>
+              <h3 class="layer-z-2">HTML</h3>
+              <p class="layer-z-1">Membangun struktur website yang semantik dan aksesibel.</p>
+            </div>
+            <div class="card-3d skill-card" data-intensity="14" data-lift="16">
+              <div class="skill-top-bar"></div>
+              <div class="skill-icon layer-z-3"><i class="fab fa-css3-alt"></i></div>
+              <h3 class="layer-z-2">CSS</h3>
+              <p class="layer-z-1">Mendesain tampilan website yang menarik dan responsif.</p>
+            </div>
+            <div class="card-3d skill-card" data-intensity="14" data-lift="16">
+              <div class="skill-top-bar"></div>
+              <div class="skill-icon layer-z-3"><i class="fab fa-js"></i></div>
+              <h3 class="layer-z-2">JavaScript</h3>
+              <p class="layer-z-1">Menambahkan interaktivitas dan fungsionalitas pada website.</p>
+            </div>
+            <div class="card-3d skill-card" data-intensity="14" data-lift="16">
+              <div class="skill-top-bar"></div>
+              <div class="skill-icon layer-z-3"><i class="fab fa-php"></i></div>
+              <h3 class="layer-z-2">PHP</h3>
+              <p class="layer-z-1">Membangun aplikasi web dinamis dengan backend yang kuat.</p>
+            </div>
+            <div class="card-3d skill-card" data-intensity="14" data-lift="16">
+              <div class="skill-top-bar"></div>
+              <div class="skill-icon layer-z-3"><i class="fas fa-database"></i></div>
+              <h3 class="layer-z-2">MySQL</h3>
+              <p class="layer-z-1">Mengelola dan merancang database untuk aplikasi web.</p>
+            </div>
+            <div class="card-3d skill-card" data-intensity="14" data-lift="16">
+              <div class="skill-top-bar"></div>
+              <div class="skill-icon layer-z-3"><i class="fas fa-mobile-alt"></i></div>
+              <h3 class="layer-z-2">Aplikasi</h3>
+              <p class="layer-z-1">Mengembangkan aplikasi untuk kebutuhan pengguna.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="section-pad bg-sec-white scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d with-sub text-3d">Proyek Saya</h2>
+          <p class="section-sub">Beberapa proyek dan eksperimen digital yang telah saya kerjakan.</p>
+
+          <div class="filter-row">
+            <button type="button" class="filter-btn btn-3d-primary" data-filter="all">Semua</button>
+            <button type="button" class="filter-btn btn-3d-outline" data-filter="web">Web Development</button>
+            <button type="button" class="filter-btn btn-3d-outline" data-filter="app">Aplikasi</button>
+            <button type="button" class="filter-btn btn-3d-outline" data-filter="design">Desain</button>
+          </div>
+
+          <div class="grid-3">
+            <div class="card-3d project-card" data-category="web" data-intensity="12" data-lift="15">
+              <div class="project-banner"><i class="fas fa-globe layer-z-3"></i></div>
+              <div class="project-body">
+                <div>
+                  <h3 class="layer-z-2">Website Portofolio</h3>
+                  <p class="layer-z-1">Website portofolio pribadi dengan desain modern, animasi halus, dark mode, dan fitur pencarian cepat.</p>
+                </div>
+                <div>
+                  <div class="tag-row layer-z-1">
+                    <span class="tag-pill">HTML</span>
+                    <span class="tag-pill">CSS</span>
+                    <span class="tag-pill">JavaScript</span>
+                  </div>
+                  <a href="https://septianfr.web.id" target="_blank" rel="noreferrer" class="project-link layer-z-2">
+                    <i class="fas fa-external-link-alt"></i> <span>Live</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-3d project-card" data-category="web" data-intensity="12" data-lift="15">
+              <div class="project-banner"><i class="fas fa-shopping-cart layer-z-3"></i></div>
+              <div class="project-body">
+                <div>
+                  <h3 class="layer-z-2">SFR Digital - PPOB</h3>
+                  <p class="layer-z-1">Platform penjualan pulsa, paket data, token listrik, dan pembayaran tagihan digital berbasis web.</p>
+                </div>
+                <div>
+                  <div class="tag-row layer-z-1">
+                    <span class="tag-pill">PHP</span>
+                    <span class="tag-pill">MySQL</span>
+                    <span class="tag-pill">Bootstrap</span>
+                  </div>
+                  <a href="#contact" class="project-link layer-z-2">
+                    <i class="fas fa-info-circle"></i> <span>Detail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-3d project-card" data-category="app" data-intensity="12" data-lift="15">
+              <div class="project-banner"><i class="fas fa-robot layer-z-3"></i></div>
+              <div class="project-body">
+                <div>
+                  <h3 class="layer-z-2">Bot Telegram Otomatisasi</h3>
+                  <p class="layer-z-1">Bot Telegram untuk otomatisasi transaksi dan notifikasi. Dibangun dengan API Telegram dan PHP.</p>
+                </div>
+                <div>
+                  <div class="tag-row layer-z-1">
+                    <span class="tag-pill">PHP</span>
+                    <span class="tag-pill">API</span>
+                    <span class="tag-pill">Telegram</span>
+                  </div>
+                  <a href="https://t.me/septianofc" target="_blank" rel="noreferrer" class="project-link layer-z-2">
+                    <i class="fab fa-telegram"></i> <span>Coba</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-3d project-card" data-category="design" data-intensity="12" data-lift="15">
+              <div class="project-banner"><i class="fas fa-palette layer-z-3"></i></div>
+              <div class="project-body">
+                <div>
+                  <h3 class="layer-z-2">Desain Logo & Branding</h3>
+                  <p class="layer-z-1">Pembuatan logo dan identitas visual untuk brand SFR Digital dan beberapa proyek pribadi.</p>
+                </div>
+                <div>
+                  <div class="tag-row layer-z-1">
+                    <span class="tag-pill">Desain Grafis</span>
+                    <span class="tag-pill">Branding</span>
+                  </div>
+                  <a href="#contact" class="project-link layer-z-2">
+                    <i class="fas fa-eye"></i> <span>Lihat</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-3d project-card" data-category="app" data-intensity="12" data-lift="15">
+              <div class="project-banner"><i class="fas fa-brain layer-z-3"></i></div>
+              <div class="project-body">
+                <div>
+                  <h3 class="layer-z-2">Eksperimen AI</h3>
+                  <p class="layer-z-1">Eksperimen penggunaan AI untuk membantu proses kreatif, pembuatan prototipe, dan otomatisasi.</p>
+                </div>
+                <div>
+                  <div class="tag-row layer-z-1">
+                    <span class="tag-pill">AI</span>
+                    <span class="tag-pill">Otomatisasi</span>
+                  </div>
+                  <a href="#contact" class="project-link layer-z-2">
+                    <i class="fas fa-flask"></i> <span>Eksperimen</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-3d project-card" data-category="web" data-intensity="12" data-lift="15">
+              <div class="project-banner"><i class="fas fa-gamepad layer-z-3"></i></div>
+              <div class="project-body">
+                <div>
+                  <h3 class="layer-z-2">Top Up Game System</h3>
+                  <p class="layer-z-1">Sistem top up game otomatis dengan integrasi API pembayaran dan pengiriman item instan.</p>
+                </div>
+                <div>
+                  <div class="tag-row layer-z-1">
+                    <span class="tag-pill">PHP</span>
+                    <span class="tag-pill">API</span>
+                    <span class="tag-pill">Payment</span>
+                  </div>
+                  <a href="#contact" class="project-link layer-z-2">
+                    <i class="fas fa-info-circle"></i> <span>Detail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="section-pad bg-sec-slate scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d text-3d">Pengalaman &amp; Perjalanan</h2>
+
+          <div class="timeline-wrap">
+            <div class="timeline-spine"></div>
+            <div class="timeline-list">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="card-3d timeline-card" data-intensity="9" data-lift="12">
+                  <span class="timeline-date layer-z-2"><i class="fas fa-calendar-alt"></i> 2024 - Sekarang</span>
+                  <h4 class="layer-z-2">Founder &amp; Developer SFR Digital</h4>
+                  <div class="timeline-role layer-z-1">Web Development &amp; Digital Business</div>
+                  <p class="layer-z-1">Membangun dan mengelola platform digital SFR Digital yang melayani penjualan pulsa, paket data, token listrik, dan pembayaran tagihan secara online.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="card-3d timeline-card" data-intensity="9" data-lift="12">
+                  <span class="timeline-date layer-z-2"><i class="fas fa-calendar-alt"></i> 2023 - 2024</span>
+                  <h4 class="layer-z-2">Freelance Web Developer</h4>
+                  <div class="timeline-role layer-z-1">Project-based</div>
+                  <p class="layer-z-1">Mengerjakan berbagai proyek website untuk teman, komunitas, dan UMKM lokal.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="card-3d timeline-card" data-intensity="9" data-lift="12">
+                  <span class="timeline-date layer-z-2"><i class="fas fa-calendar-alt"></i> 2022 - 2023</span>
+                  <h4 class="layer-z-2">Mulai Belajar Pemrograman Web</h4>
+                  <div class="timeline-role layer-z-1">Self-taught &amp; Online Courses</div>
+                  <p class="layer-z-1">Memulai perjalanan belajar coding dari HTML &amp; CSS dasar, kemudian JavaScript, PHP, dan MySQL.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="card-3d timeline-card" data-intensity="9" data-lift="12">
+                  <span class="timeline-date layer-z-2"><i class="fas fa-calendar-alt"></i> 2021 - 2022</span>
+                  <h4 class="layer-z-2">First Line of Code</h4>
+                  <div class="timeline-role layer-z-1">Kelas 9 SMP</div>
+                  <p class="layer-z-1">Menulis baris kode pertama dan menemukan passion di dunia pemrograman.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section id="services" class="section-pad bg-sec-white scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d with-sub text-3d">Layanan Saya</h2>
+          <p class="section-sub">Beberapa layanan yang dapat saya bantu untuk kebutuhan digital Anda.</p>
+
+          <div class="grid-4">
+            <div class="card-3d service-card" data-intensity="13" data-lift="16">
+              <div class="service-icon-box layer-z-3"><i class="fas fa-code"></i></div>
+              <h3 class="layer-z-2">Web Development</h3>
+              <p class="layer-z-1">Pembuatan website profesional, landing page, company profile, dan sistem berbasis web.</p>
+              <div class="tag-row layer-z-1" style="justify-content:center; margin-bottom:0;">
+                <span class="tag-pill">HTML</span><span class="tag-pill">CSS</span><span class="tag-pill">PHP</span><span class="tag-pill">MySQL</span>
+              </div>
+            </div>
+
+            <div class="card-3d service-card" data-intensity="13" data-lift="16">
+              <div class="service-icon-box layer-z-3"><i class="fas fa-paint-brush"></i></div>
+              <h3 class="layer-z-2">Desain UI/UX</h3>
+              <p class="layer-z-1">Perancangan antarmuka dan pengalaman pengguna yang modern, intuitif, dan responsif.</p>
+              <div class="tag-row layer-z-1" style="justify-content:center; margin-bottom:0;">
+                <span class="tag-pill">UI Design</span><span class="tag-pill">UX Research</span><span class="tag-pill">Prototyping</span>
+              </div>
+            </div>
+
+            <div class="card-3d service-card" data-intensity="13" data-lift="16">
+              <div class="service-icon-box layer-z-3"><i class="fas fa-robot"></i></div>
+              <h3 class="layer-z-2">Bot &amp; Automation</h3>
+              <p class="layer-z-1">Pengembangan bot Telegram, WhatsApp, dan sistem otomatisasi untuk kebutuhan bisnis.</p>
+              <div class="tag-row layer-z-1" style="justify-content:center; margin-bottom:0;">
+                <span class="tag-pill">Telegram Bot</span><span class="tag-pill">API</span><span class="tag-pill">Automation</span>
+              </div>
+            </div>
+
+            <div class="card-3d service-card" data-intensity="13" data-lift="16">
+              <div class="service-icon-box layer-z-3"><i class="fas fa-store"></i></div>
+              <h3 class="layer-z-2">Digital Business</h3>
+              <p class="layer-z-1">Konsultasi dan pembuatan sistem penjualan digital seperti PPOB, top up game, dan payment gateway.</p>
+              <div class="tag-row layer-z-1" style="justify-content:center; margin-bottom:0;">
+                <span class="tag-pill">PPOB</span><span class="tag-pill">Top Up</span><span class="tag-pill">Payment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES SECTION (TRUE 3D COVERFLOW) -->
+      <section id="certificates" class="section-pad bg-sec-slate scene-3d" style="overflow:hidden;">
+        <div class="container">
+          <h2 class="section-title-3d with-sub text-3d">Sertifikat Saya</h2>
+          <p class="section-sub">Berikut adalah sertifikat-sertifikat yang telah saya peroleh selama belajar pemrograman:</p>
+
+          <div id="certStage" class="cert-stage scene-3d">
+            <div class="cert-slide-3d" data-title="Belajar Dasar HTML dan CSS" data-desc="Sertifikat kelulusan dari kursus dasar HTML dan CSS.">
+              <img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-lxs2tzt2hya8.jpg" alt="Belajar Dasar HTML dan CSS" />
+            </div>
+            <div class="cert-slide-3d" data-title="Belajar Dasar CSS" data-desc="Sertifikat kelulusan dari kursus dasar CSS.">
+              <img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-kbfgaz2hlr0w.jpg" alt="Belajar Dasar CSS" />
+            </div>
+            <div class="cert-slide-3d" data-title="Belajar JavaScript Dasar" data-desc="Sertifikat kelulusan dari kursus dasar JavaScript.">
+              <img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-zdaze9qidls7.jpg" alt="Belajar JavaScript Dasar" />
+            </div>
+            <div class="cert-slide-3d" data-title="Belajar JQuery Dasar" data-desc="Sertifikat kelulusan dari kursus dasar JQuery.">
+              <img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-mx68heummdgu.jpg" alt="Belajar JQuery Dasar" />
+            </div>
+            <div class="cert-slide-3d" data-title="Belajar Bootstrap Framework" data-desc="Sertifikat kelulusan dari kursus Bootstrap Framework.">
+              <img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-x2yvifklmgux.jpg" alt="Belajar Bootstrap Framework" />
+            </div>
+            <div class="cert-slide-3d" data-title="Belajar Penggunaan Database MySQL pada Pemrograman PHP" data-desc="Sertifikat kelulusan dari kursus MySQL dengan PHP.">
+              <img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-6rbz8782rm4v.jpg" alt="Belajar Pengunaan Database MySQL Pada Pemrograman PHP" />
+            </div>
+            <div class="cert-slide-3d" data-title="Belajar Database MySQL" data-desc="Sertifikat kelulusan dari kursus dasar MySQL.">
+              <img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-iwtzebjp612v.jpg" alt="Belajar Database MySQL" />
+            </div>
+            <div class="cert-slide-3d" data-title="Security Course" data-desc="Sertifikat kelulusan dari kursus keamanan web.">
+              <img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-inn2mek6obxh.jpg" alt="Security Course" />
+            </div>
+          </div>
+
+          <div class="cert-controls">
+            <button type="button" id="prevBtn" class="sphere-3d cert-nav-btn" aria-label="Sertifikat Sebelumnya">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div id="certDots" class="cert-dots"></div>
+            <button type="button" id="nextBtn" class="sphere-3d cert-nav-btn" aria-label="Sertifikat Berikutnya">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div style="display:flex; justify-content:center; margin-top:40px;">
+            <a href="/sertifikat.html" target="_blank" rel="noreferrer" class="btn-3d-outline">
+              <i class="fas fa-th-large"></i>
+              <span>Lihat Semua Sertifikat</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOW SECTION -->
+      <section id="now" class="section-pad bg-sec-white scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d with-sub text-3d">Sedang Saya Kerjakan</h2>
+          <p class="section-sub">Fokus dan aktivitas terkini saya per <span id="nowDate"></span>.</p>
+
+          <div class="grid-4">
+            <div class="card-3d now-card" data-intensity="12" data-lift="14">
+              <div class="now-icon layer-z-3"><i class="fas fa-laptop-code"></i></div>
+              <h3 class="layer-z-2">Membangun SFR Digital</h3>
+              <p class="layer-z-1">Mengembangkan platform PPOB dan layanan digital SFR Digital dengan fitur-fitur baru yang lebih lengkap.</p>
+              <span class="status-badge badge-building layer-z-2"><i class="fas fa-hammer"></i> Building</span>
+            </div>
+
+            <div class="card-3d now-card" data-intensity="12" data-lift="14">
+              <div class="now-icon layer-z-3"><i class="fas fa-book-open"></i></div>
+              <h3 class="layer-z-2">Belajar Laravel &amp; React</h3>
+              <p class="layer-z-1">Mendalami framework Laravel untuk backend dan React.js untuk frontend.</p>
+              <span class="status-badge badge-learning layer-z-2"><i class="fas fa-graduation-cap"></i> Learning</span>
+            </div>
+
+            <div class="card-3d now-card" data-intensity="12" data-lift="14">
+              <div class="now-icon layer-z-3"><i class="fas fa-palette"></i></div>
+              <h3 class="layer-z-2">Eksplorasi Desain UI/UX</h3>
+              <p class="layer-z-1">Mengeksplorasi tren desain terbaru dan belajar tools seperti Figma.</p>
+              <span class="status-badge badge-learning layer-z-2"><i class="fas fa-graduation-cap"></i> Learning</span>
+            </div>
+
+            <div class="card-3d now-card" data-intensity="12" data-lift="14">
+              <div class="now-icon layer-z-3"><i class="fas fa-circle"></i></div>
+              <h3 class="layer-z-2">Status Ketersediaan</h3>
+              <p class="layer-z-1">Terbuka untuk proyek freelance, kolaborasi, dan diskusi seputar pengembangan web.</p>
+              <span class="status-badge badge-online layer-z-2"><span class="online-dot"></span> Online</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section id="testimonials" class="section-pad bg-sec-slate scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d with-sub text-3d">Testimoni</h2>
+          <p class="section-sub">Ulasan dan pengalaman dari orang-orang yang pernah bekerja sama dengan saya.</p>
+
+          <div class="grid-3">
+            <div class="card-3d testi-card" data-intensity="12" data-lift="14">
+              <p class="testi-quote layer-z-1">
+                "Terima kasih Septian sudah membantu membuat website untuk usaha saya. Hasilnya rapi, cepat, dan sesuai dengan yang saya minta. Recommended!"
+              </p>
+              <div class="testi-author layer-z-2">
+                <div class="testi-avatar">A</div>
+                <div>
+                  <strong style="display:block;">Andi</strong>
+                  <small style="color:var(--text-muted);">Pemilik UMKM</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-3d testi-card" data-intensity="12" data-lift="14">
+              <p class="testi-quote layer-z-1">
+                "Bot Telegram yang dibuat sangat membantu otomatisasi transaksi di komunitas kami. Respon cepat dan hasilnya memuaskan."
+              </p>
+              <div class="testi-author layer-z-2">
+                <div class="testi-avatar">R</div>
+                <div>
+                  <strong style="display:block;">Rizky</strong>
+                  <small style="color:var(--text-muted);">Admin Komunitas</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-3d testi-card" data-intensity="12" data-lift="14">
+              <p class="testi-quote layer-z-1">
+                "Septian adalah developer muda yang berbakat. Meskipun masih pelajar, kemampuannya dalam membuat website sudah di atas rata-rata."
+              </p>
+              <div class="testi-author layer-z-2">
+                <div class="testi-avatar">D</div>
+                <div>
+                  <strong style="display:block;">Dewi</strong>
+                  <small style="color:var(--text-muted);">Guru TIK</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHANGELOG SECTION -->
+      <section id="changelog" class="section-pad bg-sec-white scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d with-sub text-3d">Changelog</h2>
+          <p class="section-sub">Riwayat pembaruan website dan proyek-proyek saya.</p>
+
+          <div class="changelog-list">
+            <div class="changelog-row">
+              <div class="changelog-date-box"><span>19</span><small>Okt</small></div>
+              <div class="card-3d changelog-card" data-intensity="8" data-lift="10">
+                <h4 class="layer-z-2">Pembaruan Besar Website <span class="cl-badge cl-new">NEW</span></h4>
+                <p class="layer-z-1">Menambahkan fitur Dark Mode, Command Palette (Ctrl+K), halaman Now, Changelog, Testimoni, Services, Timeline Pengalaman, dan banyak fitur baru lainnya.</p>
+              </div>
+            </div>
+
+            <div class="changelog-row">
+              <div class="changelog-date-box"><span>15</span><small>Jan</small></div>
+              <div class="card-3d changelog-card" data-intensity="8" data-lift="10">
+                <h4 class="layer-z-2">Penambahan Section Proyek <span class="cl-badge cl-update">UPDATE</span></h4>
+                <p class="layer-z-1">Menambahkan galeri proyek dengan filter kategori dan deskripsi detail untuk setiap proyek.</p>
+              </div>
+            </div>
+
+            <div class="changelog-row">
+              <div class="changelog-date-box"><span>10</span><small>Sept</small></div>
+              <div class="card-3d changelog-card" data-intensity="8" data-lift="10">
+                <h4 class="layer-z-2">Perbaikan Tampilan Mobile <span class="cl-badge cl-fix">FIX</span></h4>
+                <p class="layer-z-1">Memperbaiki tampilan navigasi di perangkat mobile, memastikan semua menu dapat diakses dengan baik.</p>
+              </div>
+            </div>
+
+            <div class="changelog-row">
+              <div class="changelog-date-box"><span>06</span><small>Juni</small></div>
+              <div class="card-3d changelog-card" data-intensity="8" data-lift="10">
+                <h4 class="layer-z-2">Peluncuran Website <span class="cl-badge cl-new">NEW</span></h4>
+                <p class="layer-z-1">Website portofolio septianfr.web.id resmi diluncurkan dengan halaman Home, About, Skills, Certificates, dan Contact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QR CODE SECTION -->
+      <section id="qr" class="qr-section scene-3d">
+        <div class="container qr-flex">
+          <h3 class="text-3d" style="margin:0; font-size:1.5rem;">Scan untuk Membuka Portofolio</h3>
+          <p style="margin:0; font-size:0.875rem; color:var(--text-muted); max-width:440px;">
+            Bagikan halaman ini dengan mudah melalui QR code di bawah ini. QR code berisi URL portofolio resmi.
+          </p>
+
+          <div class="card-3d qr-box" data-intensity="16" data-lift="20">
+            <canvas id="qrCanvas" width="200" height="200" class="layer-z-2" style="width:200px; height:200px; image-rendering:pixelated;"></canvas>
+          </div>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:8px;">
+            <button type="button" id="downloadQRBtn" class="btn-3d-primary" style="font-size:0.875rem; padding:12px 24px;">
+              <i class="fas fa-download"></i> <span>Unduh QR</span>
+            </button>
+            <button type="button" id="copyLinkBtn" class="btn-3d-outline" style="font-size:0.875rem; padding:12px 24px;">
+              <i class="fas fa-copy"></i> <span>Salin Link</span>
+            </button>
+          </div>
+
+          <p id="qrNotice" style="display:none; margin:0; font-size:0.75rem; font-weight:600; color:#42a5f5;"></p>
+
+          <p style="margin:0; font-size:0.875rem; color:var(--text-muted);">
+            Atau kunjungi langsung: <strong style="color:#42a5f5;">septianfr.web.id</strong>
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section-pad bg-sec-slate scene-3d">
+        <div class="container">
+          <h2 class="section-title-3d text-3d">Hubungi Saya</h2>
+
+          <div class="contact-grid">
+            <div class="card-3d contact-card" data-intensity="9" data-lift="12">
+              <h3 class="layer-z-2" style="font-size:1.5rem; color:#42a5f5; margin:0 0 12px 0;">Mari Berkolaborasi!</h3>
+              <p class="layer-z-1" style="font-size:0.875rem; color:var(--text-muted); margin:0 0 24px 0;">
+                Jika Anda tertarik dengan karya saya atau ingin berdiskusi tentang proyek, jangan ragu untuk menghubungi saya.
+              </p>
+
+              <div class="layer-z-1">
+                <div class="contact-info-item">
+                  <div class="sphere-3d contact-sphere"><i class="fas fa-map-marker-alt"></i></div>
+                  <div>
+                    <h4>Lokasi</h4>
+                    <p>Jl. PUK Muntur, Ranjeng, Indonesia 45253</p>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <div class="sphere-3d contact-sphere"><i class="fas fa-envelope"></i></div>
+                  <div>
+                    <h4>Email</h4>
+                    <p>septian@septianfr.web.id</p>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <div class="sphere-3d contact-sphere"><i class="fas fa-phone"></i></div>
+                  <div>
+                    <h4>Telepon</h4>
+                    <p>+62 813-1657-036</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="layer-z-2" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:24px;">
+                <a href="https://wa.me/628131657036" target="_blank" rel="noreferrer" class="btn-3d-primary" style="flex:1; background:#25D366; box-shadow:0 5px 0 #128c7e; font-size:0.875rem; padding:12px 20px;">
+                  <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+                </a>
+                <a href="https://t.me/septianofc" target="_blank" rel="noreferrer" class="btn-3d-primary" style="flex:1; background:#0088cc; box-shadow:0 5px 0 #005f8f; font-size:0.875rem; padding:12px 20px;">
+                  <i class="fab fa-telegram"></i> <span>Telegram</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="card-3d contact-card" data-intensity="7" data-lift="12">
+              <form id="contactForm" action="send.php" method="POST" class="layer-z-1">
+                <div class="form-group">
+                  <label for="name">Nama Lengkap</label>
+                  <input id="name" name="name" type="text" required class="input-3d" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required class="input-3d" />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subjek</label>
+                  <input id="subject" name="subject" type="text" required class="input-3d" />
+                </div>
+                <div class="form-group">
+                  <label for="message">Pesan</label>
+                  <textarea id="message" name="message" rows="5" required class="input-3d" style="resize:vertical;"></textarea>
+                </div>
+                <p id="contactFeedback" style="display:none; font-size:0.875rem; font-weight:500; margin:0 0 16px 0;"></p>
+                <button type="submit" id="contactSubmitBtn" class="btn-3d-primary">
+                  <i class="fas fa-paper-plane"></i> <span>Kirim Pesan</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer scene-3d">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <h4>Tentang Saya</h4>
+              <p style="font-size:0.875rem; color:#cbd5e1; margin:0 0 20px 0;">
+                Saya adalah pelajar SMA yang bersemangat dalam pemrograman web dan teknologi. Saya memiliki minat dalam pengembangan front-end dan back-end.
+              </p>
+              <div style="display:flex; gap:12px;">
+                <a href="https://wa.me/628131657036" target="_blank" rel="noreferrer" class="sphere-3d" style="width:40px; height:40px; background:rgba(255,255,255,0.1);"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/septianofc" target="_blank" rel="noreferrer" class="sphere-3d" style="width:40px; height:40px; background:rgba(255,255,255,0.1);"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/_septianfr?igsh=MTRmMDFkbzN0MnhqcQ==" target="_blank" rel="noreferrer" class="sphere-3d" style="width:40px; height:40px; background:rgba(255,255,255,0.1);"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61579377972764&mibextid=ZbWKwL" target="_blank" rel="noreferrer" class="sphere-3d" style="width:40px; height:40px; background:rgba(255,255,255,0.1);"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/septianofc" target="_blank" rel="noreferrer" class="sphere-3d" style="width:40px; height:40px; background:rgba(255,255,255,0.1);"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+
+            <div>
+              <h4>Link Cepat</h4>
+              <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#certificates">Sertifikat</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Halaman Lain</h4>
+              <ul class="footer-links">
+                <li><a href="#now">Now Page</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#changelog">Changelog</a></li>
+                <li><a href="#qr">QR Code</a></li>
+                <li><a href="#home">Privacy Policy</a></li>
+                <li><a href="#home">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            &copy; 2026 Septian Fathur Rohman. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <a href="#home" id="backToTop" class="sphere-3d" aria-label="Kembali ke atas">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- 3D Certificate Lightbox Modal -->
+    <div id="certificateModal" class="scene-3d">
+      <button type="button" id="modalCloseBtn" class="sphere-3d modal-close-btn" aria-label="Tutup">&times;</button>
+      <div class="card-3d modal-card" data-intensity="12" data-lift="20">
+        <img id="modalCertImg" src="" alt="" class="layer-z-2" />
+        <div class="layer-z-1">
+          <h3 id="modalCertTitle" style="margin:0 0 4px 0; font-size:1.25rem;"></h3>
+          <p id="modalCertDesc" style="margin:0; font-size:0.875rem; color:var(--text-muted);"></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./three-world.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
