@@ -1,0 +1,249 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.35s ease, color 0.35s ease;
+  }
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================================================
+   FULL 3D ARCHITECTURE FOR EVERY ELEMENT
+   ========================================================= */
+.scene-3d {
+  perspective: 1400px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Volumetric 3D Extruded Surface Card */
+.card-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.3s ease;
+  box-shadow:
+    0 8px 0 0 rgba(148, 163, 184, 0.32),
+    0 18px 34px -10px rgba(15, 23, 42, 0.16),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.7);
+}
+
+.dark .card-3d {
+  box-shadow:
+    0 8px 0 0 rgba(2, 6, 23, 0.85),
+    0 20px 38px -10px rgba(2, 6, 23, 0.65),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.card-3d:hover {
+  box-shadow:
+    0 14px 0 0 rgba(66, 165, 245, 0.34),
+    0 28px 46px -12px rgba(30, 136, 229, 0.28),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+}
+
+.dark .card-3d:hover {
+  box-shadow:
+    0 14px 0 0 rgba(2, 6, 23, 0.92),
+    0 30px 52px -12px rgba(66, 165, 245, 0.26),
+    inset 0 1px 0 0 rgba(100, 181, 246, 0.18);
+}
+
+/* Layered Z-Depth Children inside 3D Cards */
+.layer-z-1 {
+  transform: translateZ(14px);
+}
+
+.layer-z-2 {
+  transform: translateZ(26px);
+}
+
+.layer-z-3 {
+  transform: translateZ(42px);
+}
+
+/* Extruded 3D Title Depth */
+.text-3d {
+  text-shadow:
+    0 1px 0 rgba(30, 136, 229, 0.22),
+    0 2px 0 rgba(30, 136, 229, 0.18),
+    0 3px 0 rgba(15, 23, 42, 0.12),
+    0 8px 18px rgba(15, 23, 42, 0.16);
+}
+
+.dark .text-3d {
+  text-shadow:
+    0 1px 0 rgba(15, 23, 42, 0.9),
+    0 2px 0 rgba(15, 23, 42, 0.85),
+    0 4px 0 rgba(2, 6, 23, 0.8),
+    0 10px 24px rgba(0, 0, 0, 0.65);
+}
+
+/* Extruded 3D Accent Text */
+.text-3d-accent {
+  text-shadow:
+    0 2px 0 #1565c0,
+    0 4px 0 #0d47a1,
+    0 10px 22px rgba(30, 136, 229, 0.42);
+}
+
+/* Tactile 3D Extruded Buttons */
+.btn-3d-primary {
+  transform: translateY(0) translateZ(16px);
+  box-shadow:
+    0 5px 0 0 #1565c0,
+    0 12px 24px -4px rgba(30, 136, 229, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 160ms ease;
+}
+
+.btn-3d-primary:hover {
+  transform: translateY(-3px) translateZ(22px);
+  box-shadow:
+    0 8px 0 0 #1565c0,
+    0 18px 30px -4px rgba(30, 136, 229, 0.58),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.btn-3d-primary:active {
+  transform: translateY(3px) translateZ(8px);
+  box-shadow:
+    0 2px 0 0 #1565c0,
+    0 5px 12px -2px rgba(30, 136, 229, 0.35);
+}
+
+.btn-3d-outline {
+  transform: translateY(0) translateZ(14px);
+  box-shadow:
+    0 5px 0 0 rgba(30, 136, 229, 0.35),
+    0 10px 20px -6px rgba(30, 136, 229, 0.22);
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 160ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+.btn-3d-outline:hover {
+  transform: translateY(-3px) translateZ(20px);
+  box-shadow:
+    0 8px 0 0 #1565c0,
+    0 16px 26px -6px rgba(30, 136, 229, 0.42);
+}
+
+.btn-3d-outline:active {
+  transform: translateY(2px) translateZ(8px);
+  box-shadow: 0 2px 0 0 #1565c0;
+}
+
+/* 3D Sphere Social & Action Buttons */
+.sphere-3d {
+  transform-style: preserve-3d;
+  box-shadow:
+    0 5px 0 0 #1565c0,
+    0 10px 18px -4px rgba(30, 136, 229, 0.45),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 200ms ease;
+}
+
+.sphere-3d:hover {
+  transform: translateY(-5px) rotateY(18deg) rotateX(10deg) scale(1.08);
+  box-shadow:
+    0 9px 0 0 #0d47a1,
+    0 18px 26px -4px rgba(30, 136, 229, 0.55),
+    inset 0 2px 6px rgba(255, 255, 255, 0.55);
+}
+
+/* 3D Section Title Accent Bar */
+.section-title-3d {
+  position: relative;
+}
+
+.section-title-3d::after {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotateX(25deg);
+  width: 90px;
+  height: 6px;
+  background: linear-gradient(135deg, #64b5f6 0%, #1e88e5 100%);
+  border-radius: 9999px;
+  box-shadow: 0 4px 0 rgba(21, 101, 192, 0.55), 0 8px 16px rgba(66, 165, 245, 0.4);
+}
+
+/* 3D Rotating Logo in Loading Screen */
+@keyframes spinLogo3D {
+  0% {
+    transform: perspective(700px) rotateY(0deg) rotateX(8deg) scale(1);
+  }
+  50% {
+    transform: perspective(700px) rotateY(180deg) rotateX(-8deg) scale(1.06);
+  }
+  100% {
+    transform: perspective(700px) rotateY(360deg) rotateX(8deg) scale(1);
+  }
+}
+
+.animate-logo-3d {
+  animation: spinLogo3D 2.6s linear infinite;
+  transform-style: preserve-3d;
+}
+
+/* 3D Achievement Cube Floating Badge */
+.stat-3d-cube {
+  transform-style: preserve-3d;
+  box-shadow:
+    0 10px 0 0 rgba(13, 71, 161, 0.45),
+    0 22px 36px -8px rgba(15, 23, 42, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* 3D Input Extrusion */
+.input-3d {
+  box-shadow:
+    inset 0 3px 6px rgba(15, 23, 42, 0.08),
+    0 2px 0 rgba(255, 255, 255, 0.7);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.dark .input-3d {
+  box-shadow:
+    inset 0 3px 8px rgba(2, 6, 23, 0.55),
+    0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.input-3d:focus {
+  transform: translateZ(8px);
+  box-shadow:
+    0 0 0 3px rgba(66, 165, 245, 0.25),
+    0 6px 14px -4px rgba(66, 165, 245, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-3d,
+  .btn-3d-primary,
+  .btn-3d-outline,
+  .sphere-3d,
+  .animate-logo-3d {
+    animation: none !important;
+    transition: none !important;
+  }
+}

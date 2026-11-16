@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  
+  <title>Septian Fathur Rohman | Portofolio</title>
+  <meta name="title" content="Septian Fathur Rohman - Web Developer | Portofolio">
+  <meta name="description" content="Portofolio resmi Septian Fathur Rohman, Web Developer dan Programmer Indonesia">
+  <meta name="keywords" content="Septian Fathur Rohman, Portfolio Septian, Web Developer Indonesia, Programmer Indonesia">
+  <meta name="author" content="Septian Fathur Rohman">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="Indonesian">
+  <meta name="theme-color" content="#42a5f5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Septian - Web Developer">
+
+  <link rel="canonical" href="https://septianfr.web.id/">
+  <link rel="alternate" hreflang="id" href="https://septianfr.web.id/">
+  <link rel="alternate" hreflang="en" href="https://septianfr.web.id/">
+  <link rel="alternate" hreflang="x-default" href="https://septianfr.web.id/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://septianfr.web.id/">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <meta property="og:site_name" content="Portfolio Septian Fathur Rohman">
+  <meta property="og:title" content="Septian Fathur Rohman - Web Developer">
+  <meta property="og:description" content="Portofolio resmi Septian Fathur Rohman.">
+  <meta property="og:image" content="https://septianfr.web.id/logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="id_ID">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@septianofc">
+  <meta name="twitter:creator" content="@septianofc">
+  <meta name="twitter:title" content="Septian Fathur Rohman - Web Developer">
+  <meta name="twitter:description" content="Portofolio resmi Septian Fathur Rohman.">
+  <meta name="twitter:image" content="https://septianfr.web.id/logo.png">
+
+  <link rel="icon" type="image/png" href="https://septianfr.web.id/logo.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="https://septianfr.web.id/logo.png">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Septian Fathur Rohman",
+  "alternateName": "Septian F. R",
+  "url": "https://septianfr.web.id/"
+}
+</script>
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Septian Fathur Rohman",
+    "jobTitle": "Web Developer",
+    "url": "https://septianfr.web.id/",
+    "image": "https://septianfr.web.id/logo.png",
+    "sameAs": [
+      "https://github.com/septianofc",
+      "https://linkedin.com/in/septianofc",
+      "https://www.instagram.com/_septianfr",
+      "https://t.me/septianofc"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdgntEtAAAAAKMPC-1H_Qb901PCbOXdSxlKlFgp"></script>
+
+  <!-- QRCode.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  
+  <style>
+      :root {
+          --primary-color: #42a5f5;
+          --primary-dark: #1e88e5;
+          --primary-light: #64b5f6;
+          --secondary-color: #64748b;
+          --accent-color: #ff9800;
+          --text-color: #1e293b;
+          --text-light: #64748b;
+          --light-bg: #f8fafc;
+          --white: #ffffff;
+          --card-bg: #ffffff;
+          --border-color: #e2e8f0;
+          --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          --border-radius: 12px;
+          --gradient: linear-gradient(135deg, #42a5f5 0%, #1e88e5 100%);
+          --gradient-light: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+          --header-bg: rgba(255, 255, 255, 0.95);
+          --hero-bg: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+          --footer-bg: linear-gradient(to right, #1e293b, #0f172a);
+      }
+
+      body.dark-mode {
+          --primary-color: #64b5f6;
+          --primary-dark: #42a5f5;
+          --primary-light: #90caf9;
+          --text-color: #e2e8f0;
+          --text-light: #94a3b8;
+          --light-bg: #0f172a;
+          --white: #1e293b;
+          --card-bg: #1e293b;
+          --border-color: #334155;
+          --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+          --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+          --gradient-light: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+          --header-bg: rgba(30, 41, 59, 0.95);
+          --hero-bg: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+          --footer-bg: linear-gradient(to right, #0f172a, #020617);
+      }
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+          font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: var(--text-color);
+          background-color: var(--light-bg);
+          line-height: 1.6;
+          overflow-x: hidden;
+          font-weight: 400;
+          transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .loading-screen {
+          position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+          background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+          display: flex; flex-direction: column; justify-content: center; align-items: center;
+          z-index: 9999; transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+      .loading-screen.hidden { opacity: 0; visibility: hidden; }
+      .loading-logo { margin-bottom: 30px; animation: pulse 2s infinite; }
+      .loading-logo img { width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--primary-color); }
+      .loading-bar { width: 200px; height: 4px; background: rgba(255, 255, 255, 0.2); border-radius: 4px; overflow: hidden; margin-bottom: 20px; }
+      .loading-progress { height: 100%; width: 0%; background: var(--primary-color); border-radius: 4px; transition: width 0.3s ease; }
+      .loading-text { color: white; font-size: 1.1rem; font-weight: 500; }
+      @keyframes pulse { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.8; } }
+
+      .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+      header {
+          background-color: var(--header-bg);
+          backdrop-filter: blur(10px);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          position: fixed; width: 100%; top: 0; z-index: 1000;
+          padding: 15px 0; transition: var(--transition);
+      }
+      header.scrolled { padding: 10px 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+      nav { display: flex; justify-content: space-between; align-items: center; }
+      .logo { display: flex; align-items: center; gap: 12px; }
+      .logo-img { width: 50px; height: 50px; border-radius: 50%; overflow: hidden; border: 2px solid var(--primary-color); transition: var(--transition); box-shadow: 0 4px 6px rgba(66, 165, 245, 0.2); }
+      .logo-img:hover { transform: rotate(5deg) scale(1.05); }
+      .logo-img img { width: 100%; height: 100%; object-fit: cover; }
+      .logo-text { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); letter-spacing: -0.5px; font-family: 'Poppins', sans-serif; }
+      .nav-links { display: flex; list-style: none; gap: 30px; }
+      .nav-links a { text-decoration: none; color: var(--text-color); font-weight: 500; transition: var(--transition); position: relative; padding: 5px 0; font-family: 'Poppins', sans-serif; font-size: 0.95rem; }
+      .nav-links a:hover { color: var(--primary-color); }
+      .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: var(--primary-color); transition: var(--transition); }
+      .nav-links a:hover::after { width: 100%; }
+      .hamburger { display: none; cursor: pointer; font-size: 1.5rem; color: var(--text-color); transition: var(--transition); }
+      .hamburger:hover { color: var(--primary-color); }
+
+      .nav-actions {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+      }
+
+      .dark-mode-toggle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          background-color: var(--light-bg);
+          color: var(--text-color);
+          border: 2px solid var(--primary-color);
+          cursor: pointer;
+          transition: var(--transition);
+          font-size: 1.1rem;
+          flex-shrink: 0;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+          padding: 0;
+      }
+      .dark-mode-toggle:hover {
+          background-color: var(--primary-color);
+          color: white;
+          transform: rotate(20deg) scale(1.1);
+          box-shadow: 0 4px 12px rgba(66, 165, 245, 0.4);
+      }
+      body.dark-mode .dark-mode-toggle {
+          background-color: #334155;
+          color: #fbbf24;
+          border-color: #fbbf24;
+      }
+      body.dark-mode .dark-mode-toggle:hover {
+          background-color: #fbbf24;
+          color: #1e293b;
+      }
+
+      .hero { padding: 180px 0 120px; background: var(--hero-bg); text-align: center; position: relative; overflow: hidden; transition: background 0.3s ease; }
+      .hero::before {
+          content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+          background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2342a5f5' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+          opacity: 0.5;
+      }
+      .hero-content { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+      .hero h1 { font-size: 2.8rem; margin-bottom: 20px; color: var(--text-color); font-weight: 800; line-height: 1.2; font-family: 'Poppins', sans-serif; }
+      .hero h1 span { color: var(--primary-color); position: relative; }
+      .hero h1 span::after { content: ''; position: absolute; bottom: 5px; left: 0; width: 100%; height: 8px; background-color: rgba(66, 165, 245, 0.2); z-index: -1; border-radius: 4px; }
+      .hero p { font-size: 1.2rem; margin-bottom: 40px; color: var(--text-light); max-width: 600px; margin-left: auto; margin-right: auto; }
+      .hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+      .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 30px; border-radius: 50px; font-weight: 600; text-decoration: none; transition: var(--transition); cursor: pointer; border: none; font-size: 1rem; font-family: 'Poppins', sans-serif; }
+      .btn-primary { background-color: var(--primary-color); color: white; box-shadow: 0 4px 15px rgba(66, 165, 245, 0.4); }
+      .btn-primary:hover { background-color: var(--primary-dark); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(66, 165, 245, 0.5); }
+      .btn-secondary { background-color: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); }
+      .btn-secondary:hover { background-color: var(--primary-color); color: white; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(66, 165, 245, 0.3); }
+
+      .about { padding: 120px 0; background-color: var(--white); transition: background-color 0.3s ease; }
+      .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 60px; color: var(--text-color); position: relative; font-weight: 700; font-family: 'Poppins', sans-serif; }
+      .section-title::after { content: ''; position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: var(--gradient); border-radius: 2px; }
+      .about-content { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px; }
+      .about-img { flex: 1; min-width: 300px; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-lg); position: relative; }
+      .about-img::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--gradient); opacity: 0.1; z-index: 1; }
+      .about-img img { width: 100%; height: auto; display: block; transition: var(--transition); }
+      .about-img:hover img { transform: scale(1.05); }
+      .about-text { flex: 1; min-width: 300px; }
+      .about-text h3 { font-size: 1.6rem; margin-bottom: 20px; color: var(--primary-color); font-weight: 700; font-family: 'Poppins', sans-serif; }
+      .about-details { margin: 25px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+      .about-details p { margin-bottom: 10px; display: flex; align-items: center; gap: 8px; font-size: 0.95rem; color: var(--text-color); }
+      .about-details i { color: var(--primary-color); width: 20px; }
+      .about-details strong { color: var(--primary-color); font-weight: 600; }
+      .quote { font-style: italic; color: var(--text-light); border-left: 4px solid var(--primary-color); padding-left: 20px; margin: 25px 0; font-size: 0.95rem; }
+      .social-links { display: flex; gap: 12px; margin-top: 25px; }
+      .social-links a { display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%; background-color: var(--primary-color); color: white; transition: var(--transition); text-decoration: none; box-shadow: 0 4px 6px rgba(66, 165, 245, 0.2); }
+      .social-links a:hover { transform: translateY(-5px) scale(1.1); background-color: var(--primary-dark); }
+
+      .skills { padding: 120px 0; background-color: var(--light-bg); transition: background-color 0.3s ease; }
+      .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+      .skill-card { background-color: var(--card-bg); padding: 35px 30px; border-radius: var(--border-radius); box-shadow: var(--shadow); transition: var(--transition); text-align: center; position: relative; overflow: hidden; }
+      .skill-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: var(--gradient); }
+      .skill-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+      .skill-icon { font-size: 3.5rem; color: var(--primary-color); margin-bottom: 20px; transition: var(--transition); }
+      .skill-card:hover .skill-icon { transform: scale(1.1) rotate(5deg); }
+      .skill-card h3 { font-size: 1.4rem; margin-bottom: 15px; font-weight: 600; font-family: 'Poppins', sans-serif; color: var(--text-color); }
+      .skill-card p { color: var(--text-light); font-size: 0.95rem; }
+
+      .certificates { padding: 120px 0; background-color: var(--white); position: relative; transition: background-color 0.3s ease; }
+      .step-transaction { width: 100%; overflow: hidden; position: relative; }
+      .slider-container { position: relative; width: 100%; height: 400px; margin: 0 auto; overflow: hidden; border-radius: var(--border-radius); box-shadow: var(--shadow-lg); }
+      .slider-track { display: flex; width: 100%; height: 100%; transition: transform 0.5s ease-in-out; }
+      .slide { flex: 0 0 100%; height: 100%; position: relative; overflow: hidden; cursor: pointer; }
+      .slide img { width: 100%; height: 100%; object-fit: contain; background-color: var(--light-bg); display: block; }
+      .slide:hover::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.1); }
+      .slider-controls { display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 30px; }
+      .slider-btn { background-color: var(--primary-color); color: white; border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition); font-size: 1.2rem; box-shadow: 0 4px 6px rgba(66, 165, 245, 0.2); }
+      .slider-btn:hover { background-color: var(--primary-dark); transform: translateY(-3px); }
+      .slider-btn.disabled { opacity: 0.5; cursor: not-allowed; }
+      .slider-btn.disabled:hover { transform: none; background-color: var(--primary-color); }
+      .slider-indicators { display: flex; gap: 10px; }
+      .indicator { width: 12px; height: 12px; border-radius: 50%; background-color: #ddd; cursor: pointer; transition: var(--transition); }
+      .indicator.active { background-color: var(--primary-color); }
+      .view-all-btn { display: flex; justify-content: center; margin-top: 40px; }
+
+      .certificate-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.95); z-index: 2000; overflow: auto; animation: fadeIn 0.3s ease; }
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      .modal-container { display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+      .modal-content { max-width: 90%; max-height: 90vh; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); animation: zoomIn 0.3s ease; }
+      @keyframes zoomIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+      .close-modal { position: fixed; top: 20px; right: 30px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; transition: var(--transition); z-index: 2001; background: rgba(0,0,0,0.5); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+      .close-modal:hover { color: var(--primary-color); background: rgba(0,0,0,0.7); transform: rotate(90deg); }
+
+      .contact { padding: 120px 0; background-color: var(--light-bg); transition: background-color 0.3s ease; }
+      .contact-container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; }
+      .contact-info { flex: 1; min-width: 300px; }
+      .contact-info h3 { font-size: 1.6rem; margin-bottom: 20px; color: var(--primary-color); font-weight: 700; font-family: 'Poppins', sans-serif; }
+      .contact-info > p { color: var(--text-color); }
+      .contact-detail { display: flex; align-items: flex-start; margin-bottom: 25px; }
+      .contact-icon { width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0; box-shadow: 0 4px 6px rgba(66, 165, 245, 0.2); }
+      .contact-item { flex: 1; }
+      .contact-item h4 { margin-bottom: 5px; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 1.1rem; color: var(--text-color); }
+      .contact-item p { margin: 0; color: var(--text-light); font-size: 0.95rem; }
+      .contact-buttons { display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap; }
+      .contact-buttons .btn { flex: 1; justify-content: center; }
+      .contact-form { flex: 2; min-width: 300px; background-color: var(--card-bg); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow); transition: background-color 0.3s ease; }
+      .form-group { margin-bottom: 25px; }
+      .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--text-color); font-family: 'Poppins', sans-serif; font-size: 0.95rem; }
+      .form-control { width: 100%; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 1rem; transition: var(--transition); font-family: inherit; background-color: var(--white); color: var(--text-color); }
+      .form-control:focus { border-color: var(--primary-color); outline: none; box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.2); }
+      body.dark-mode .form-control { background-color: #334155; color: var(--text-color); border-color: #475569; }
+      textarea.form-control { min-height: 150px; resize: vertical; }
+      .submit-btn { padding: 15px 30px; background-color: var(--primary-color); color: white; border: none; border-radius: 50px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: var(--transition); display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 15px rgba(66, 165, 245, 0.4); font-family: 'Poppins', sans-serif; }
+      .submit-btn:hover { background-color: var(--primary-dark); transform: translateY(-3px); }
+
+      .grecaptcha-badge {
+          width: 70px !important; height: 60px !important;
+          right: 15px !important; bottom: 20px !important;
+          overflow: hidden !important; border-radius: 6px !important;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18) !important;
+          transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), right 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, transform 0.3s ease !important;
+          z-index: 997 !important;
+      }
+      @media (hover: hover) and (pointer: fine) {
+          .grecaptcha-badge:hover {
+              width: 256px !important;
+              box-shadow: 0 8px 25px rgba(0, 0, 0, 0.22) !important;
+              transform: translateY(-2px);
+              animation: recaptchaExpand 0.4s ease forwards;
+          }
+      }
+      .grecaptcha-badge.recaptcha-expanded { width: 256px !important; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.22) !important; transform: translateY(-2px); animation: recaptchaExpand 0.4s ease forwards; }
+      @keyframes recaptchaExpand { 0% { width: 70px; opacity: 0.85; } 60% { width: 270px; } 100% { width: 256px; opacity: 1; } }
+      .grecaptcha-badge.recaptcha-closing { animation: recaptchaCollapse 0.35s ease forwards; }
+      @keyframes recaptchaCollapse { 0% { width: 256px; opacity: 1; } 100% { width: 70px; opacity: 0.9; } }
+
+      footer { background: var(--footer-bg); color: white; padding: 70px 0 20px; transition: background 0.3s ease; }
+      .footer-content { display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 50px; gap: 40px; }
+      .footer-col { flex: 1; min-width: 250px; }
+      .footer-col h4 { font-size: 1.3rem; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--primary-light); font-weight: 600; font-family: 'Poppins', sans-serif; }
+      .footer-col h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: var(--primary-light); }
+      .footer-col p { margin-bottom: 15px; color: #cbd5e1; line-height: 1.7; font-size: 0.95rem; }
+      .footer-links { list-style: none; }
+      .footer-links li { margin-bottom: 12px; }
+      .footer-links a { color: #cbd5e1; text-decoration: none; transition: var(--transition); display: block; font-size: 0.95rem; }
+      .footer-links a:hover { color: var(--primary-light); transform: translateX(5px); }
+      .footer-social { display: flex; gap: 12px; margin-top: 20px; }
+      .footer-social a { display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1); color: white; transition: var(--transition); text-decoration: none; }
+      .footer-social a:hover { background-color: var(--primary-color); transform: translateY(-5px); }
+      .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+      .footer-bottom p { color: #94a3b8; font-size: 0.9rem; }
+
+      .back-to-top { position: fixed; bottom: 30px; left: 20px; width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: var(--transition); opacity: 0; visibility: hidden; z-index: 998; font-size: 1.2rem; }
+      .back-to-top.active { opacity: 1; visibility: visible; }
+      .back-to-top:hover { background-color: var(--primary-dark); transform: translateY(-5px) scale(1.1); }
+
+      .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+      .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+      .animated-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden; pointer-events: none; }
+      .bg-shape { position: absolute; border-radius: 50%; background: rgba(66, 165, 245, 0.1); animation: float 20s infinite linear; }
+      .bg-shape:nth-child(1) { width: 400px; height: 400px; top: -100px; left: -100px; animation-delay: 0s; }
+      .bg-shape:nth-child(2) { width: 300px; height: 300px; top: 50%; right: -100px; animation-delay: 5s; animation-direction: reverse; }
+      .bg-shape:nth-child(3) { width: 250px; height: 250px; bottom: -50px; left: 30%; animation-delay: 10s; }
+      @keyframes float { 0% { transform: translate(0, 0) rotate(0deg); } 25% { transform: translate(20px, 20px) rotate(90deg); } 50% { transform: translate(0, 40px) rotate(180deg); } 75% { transform: translate(-20px, 20px) rotate(270deg); } 100% { transform: translate(0, 0) rotate(360deg); } }
+
+      /* ============================================
+         ACHIEVEMENT SECTION - STATISTIK FIX
+         ============================================ */
+      .achievement-section {
+          padding: 80px 0;
+          background: var(--gradient);
+          color: white;
+          position: relative;
+          overflow: hidden;
+      }
+      .achievement-section::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: rgba(0,0,0,0.05);
+          pointer-events: none;
+      }
+      .achievement-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 30px;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+      }
+      .achievement-card {
+          padding: 25px 20px;
+          background: rgba(255, 255, 255, 0.12);
+          border-radius: var(--border-radius);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          transition: var(--transition);
+      }
+      .achievement-card:hover {
+          transform: translateY(-6px);
+          background: rgba(255, 255, 255, 0.2);
+      }
+      .achievement-card .achievement-number {
+          font-size: 3rem;
+          font-weight: 800;
+          font-family: 'Poppins', sans-serif;
+          line-height: 1.2;
+          margin-bottom: 10px;
+          text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      }
+      .achievement-card .achievement-label {
+          font-size: 0.95rem;
+          opacity: 0.95;
+          font-weight: 500;
+      }
+
+      /* ============================================
+         STATISTIK FIX - PAKSA ANGKA & LABEL SELALU TAMPIL
+         ============================================ */
+      .achievement-card .achievement-number {
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          min-height: 1em;
+          line-height: 1.2;
+          color: #fff !important;
+      }
+
+      .achievement-card .achievement-label {
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          color: #fff !important;
+          line-height: 1.5;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+          .achievement-card,
+          .qr-code-wrapper,
+          body {
+              transition: none !important;
+          }
+      }
+
+      /* ============================================
+         QR CODE - FIX (HANYA SATU QR TAMPIL)
+         ============================================ */
+      .qr-section {
+          padding: 80px 0;
+          background: var(--gradient-light);
+          text-align: center;
+          transition: background 0.3s ease;
+      }
+      .qr-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+      }
+      .qr-section h3 {
+          font-size: 1.5rem;
+          color: var(--text-color);
+          font-weight: 700;
+          font-family: 'Poppins', sans-serif;
+          margin-bottom: 5px;
+      }
+      .qr-section > .container > p,
+      .qr-container > p {
+          color: var(--text-light);
+          font-size: 0.95rem;
+          max-width: 480px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      /* QR Code: tampilkan satu gambar saja */
+      .qr-code-wrapper {
+          width: 240px;
+          height: 240px;
+          min-width: 0;
+          min-height: 0;
+          padding: 20px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+          border-radius: 16px;
+          overflow: hidden;
+      }
+
+      #qrcode {
+          width: 200px;
+          height: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+      }
+
+      /* qrcodejs membuat canvas dan img sekaligus.
+         Sembunyikan img agar QR tidak muncul dua kali. */
+      #qrcode canvas {
+          display: block !important;
+          width: 200px !important;
+          height: 200px !important;
+          max-width: 200px;
+          max-height: 200px;
+          image-rendering: pixelated;
+      }
+
+      #qrcode img {
+          display: none !important;
+      }
+
+      .qr-actions {
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 8px;
+      }
+      .qr-actions .btn {
+          padding: 12px 22px;
+          font-size: 0.9rem;
+      }
+      .qr-url {
+          font-size: 0.85rem;
+          color: var(--text-light);
+          margin-top: 4px;
+      }
+      .qr-url strong {
+          color: var(--primary-color);
+          font-weight: 600;
+      }
+
+      /* ============================================
+         OTHER SECTIONS
+         ============================================ */
+      .now-section { padding: 120px 0; background: var(--light-bg); transition: background-color 0.3s ease; }
+      .now-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+      .now-card { background: var(--card-bg); border-radius: var(--border-radius); padding: 35px 30px; box-shadow: var(--shadow); transition: var(--transition); position: relative; overflow: hidden; border-left: 4px solid var(--primary-color); }
+      .now-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+      .now-card .now-icon { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 18px; transition: var(--transition); }
+      .now-card:hover .now-icon { transform: scale(1.1) rotate(-5deg); }
+      .now-card h3 { font-size: 1.25rem; margin-bottom: 12px; font-weight: 600; font-family: 'Poppins', sans-serif; color: var(--text-color); }
+      .now-card p { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 10px; }
+      .now-card .now-tag { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-top: 8px; }
+      .now-tag.learning { background: rgba(66, 165, 245, 0.12); color: var(--primary-color); }
+      .now-tag.building { background: rgba(255, 152, 0, 0.12); color: #ff9800; }
+      .now-tag.online { background: rgba(76, 175, 80, 0.12); color: #4caf50; }
+      .now-tag.online::before { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #4caf50; animation: blink 1.5s infinite; }
+      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+      .testimonials { padding: 120px 0; background: var(--white); transition: background-color 0.3s ease; }
+      .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+      .testimonial-card { background: var(--light-bg); border-radius: var(--border-radius); padding: 35px 30px; box-shadow: var(--shadow); transition: var(--transition); position: relative; }
+      .testimonial-card::before { content: '"'; position: absolute; top: 15px; right: 25px; font-size: 5rem; color: var(--primary-color); opacity: 0.15; font-family: Georgia, serif; line-height: 1; }
+      .testimonial-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+      .testimonial-card > p { color: var(--text-color); font-size: 0.95rem; line-height: 1.8; margin-bottom: 20px; font-style: italic; position: relative; z-index: 1; }
+      .testimonial-author { display: flex; align-items: center; gap: 14px; }
+      .testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--gradient); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.1rem; flex-shrink: 0; }
+      .testimonial-info strong { display: block; color: var(--text-color); font-size: 0.95rem; font-family: 'Poppins', sans-serif; }
+      .testimonial-info small { color: var(--text-light); font-size: 0.8rem; }
+
+      .changelog-section { padding: 120px 0; background: var(--light-bg); transition: background-color 0.3s ease; }
+      .changelog-list { max-width: 750px; margin: 0 auto; }
+      .changelog-item { display: flex; gap: 25px; margin-bottom: 30px; position: relative; padding-bottom: 30px; }
+      .changelog-item:last-child { margin-bottom: 0; padding-bottom: 0; }
+      .changelog-item::after { content: ''; position: absolute; bottom: 0; left: 39px; right: 0; height: 1px; background: var(--border-color); }
+      .changelog-item:last-child::after { display: none; }
+      .changelog-date { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; width: 54px; }
+      .changelog-date .date-badge { width: 54px; height: 54px; border-radius: 14px; background: var(--gradient); color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; line-height: 1.2; box-shadow: 0 4px 12px rgba(66, 165, 245, 0.3); }
+      .changelog-date .date-badge small { font-size: 0.65rem; font-weight: 500; opacity: 0.9; }
+      .changelog-content { flex: 1; background: var(--card-bg); padding: 22px 25px; border-radius: var(--border-radius); box-shadow: var(--shadow); transition: var(--transition); }
+      .changelog-content:hover { transform: translateX(5px); box-shadow: var(--shadow-lg); }
+      .changelog-content h4 { font-size: 1.05rem; margin-bottom: 8px; font-weight: 600; font-family: 'Poppins', sans-serif; color: var(--text-color); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+      .changelog-content .badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 50px; font-weight: 600; }
+      .badge.new { background: rgba(76, 175, 80, 0.15); color: #4caf50; }
+      .badge.update { background: rgba(66, 165, 245, 0.15); color: var(--primary-color); }
+      .badge.fix { background: rgba(255, 152, 0, 0.15); color: #ff9800; }
+      .changelog-content p { color: var(--text-light); font-size: 0.9rem; line-height: 1.7; }
+
+      .services { padding: 120px 0; background: var(--white); transition: background-color 0.3s ease; }
+      .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+      .service-card { background: var(--light-bg); border-radius: var(--border-radius); padding: 40px 30px; text-align: center; transition: var(--transition); position: relative; overflow: hidden; }
+      .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--gradient); transform: scaleX(0); transition: var(--transition); }
+      .service-card:hover::before { transform: scaleX(1); }
+      .service-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+      .service-icon { width: 80px; height: 80px; border-radius: 24px; background: var(--gradient); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 25px; transition: var(--transition); box-shadow: 0 8px 20px rgba(66, 165, 245, 0.3); }
+      .service-card:hover .service-icon { transform: rotate(-8deg) scale(1.08); }
+      .service-card h3 { font-size: 1.25rem; margin-bottom: 12px; font-weight: 600; font-family: 'Poppins', sans-serif; color: var(--text-color); }
+      .service-card p { color: var(--text-light); font-size: 0.92rem; line-height: 1.7; }
+      .service-card .service-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 18px; }
+      .service-card .service-tags span { font-size: 0.75rem; padding: 4px 12px; border-radius: 50px; background: rgba(66, 165, 245, 0.1); color: var(--primary-color); font-weight: 500; }
+
+      .experience-section { padding: 120px 0; background: var(--light-bg); transition: background-color 0.3s ease; }
+      .timeline { max-width: 850px; margin: 0 auto; position: relative; }
+      .timeline::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 3px; background: var(--gradient); border-radius: 3px; }
+      .timeline-item { position: relative; padding-left: 65px; margin-bottom: 40px; }
+      .timeline-item:last-child { margin-bottom: 0; }
+      .timeline-dot { position: absolute; left: 11px; top: 5px; width: 21px; height: 21px; border-radius: 50%; background: var(--primary-color); border: 4px solid var(--light-bg); box-shadow: 0 0 0 4px rgba(66, 165, 245, 0.2); transition: var(--transition); }
+      .timeline-item:hover .timeline-dot { transform: scale(1.3); box-shadow: 0 0 0 8px rgba(66, 165, 245, 0.15); }
+      .timeline-card { background: var(--card-bg); padding: 28px 30px; border-radius: var(--border-radius); box-shadow: var(--shadow); transition: var(--transition); }
+      .timeline-card:hover { transform: translateX(5px); box-shadow: var(--shadow-lg); }
+      .timeline-card .timeline-date { font-size: 0.8rem; color: var(--primary-color); font-weight: 600; margin-bottom: 8px; display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; background: rgba(66, 165, 245, 0.1); border-radius: 50px; }
+      .timeline-card h4 { font-size: 1.15rem; margin-bottom: 6px; font-weight: 600; font-family: 'Poppins', sans-serif; color: var(--text-color); }
+      .timeline-card .timeline-role { font-size: 0.85rem; color: var(--text-light); margin-bottom: 10px; font-weight: 500; }
+      .timeline-card p { color: var(--text-light); font-size: 0.9rem; line-height: 1.7; }
+      @media (max-width: 768px) {
+          .timeline::before { left: 14px; }
+          .timeline-item { padding-left: 50px; }
+          .timeline-dot { left: 5px; width: 19px; height: 19px; }
+          .now-section, .testimonials, .changelog-section, .services, .experience-section { padding: 80px 0; }
+      }
+
+      .projects-section { padding: 120px 0; background: var(--white); transition: background-color 0.3s ease; }
+      .projects-filter { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 45px; }
+      .filter-btn { padding: 10px 24px; border-radius: 50px; border: 2px solid var(--border-color); background: transparent; color: var(--text-color); font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: var(--transition); font-family: 'Poppins', sans-serif; }
+      .filter-btn:hover, .filter-btn.active { border-color: var(--primary-color); background: var(--primary-color); color: white; box-shadow: 0 4px 15px rgba(66, 165, 245, 0.3); }
+      .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+      .project-card { background: var(--light-bg); border-radius: var(--border-radius); overflow: hidden; transition: var(--transition); box-shadow: var(--shadow); }
+      .project-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+      .project-card-img { height: 200px; background: var(--gradient); display: flex; align-items: center; justify-content: center; color: white; font-size: 3.5rem; position: relative; overflow: hidden; }
+      .project-card-body { padding: 25px 28px; }
+      .project-card-body h3 { font-size: 1.2rem; margin-bottom: 10px; font-weight: 600; font-family: 'Poppins', sans-serif; color: var(--text-color); }
+      .project-card-body p { color: var(--text-light); font-size: 0.9rem; line-height: 1.7; margin-bottom: 16px; }
+      .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+      .project-tags span { font-size: 0.72rem; padding: 4px 12px; border-radius: 50px; background: rgba(66, 165, 245, 0.12); color: var(--primary-color); font-weight: 600; }
+      .project-links { display: flex; gap: 12px; }
+      .project-links a { font-size: 0.85rem; color: var(--primary-color); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; transition: var(--transition); }
+      .project-links a:hover { color: var(--primary-dark); gap: 8px; }
+
+      @media (max-width: 768px) {
+          .nav-links {
+              position: fixed; top: 70px; left: -100%; width: 100%;
+              height: calc(100vh - 70px); background-color: var(--white);
+              flex-direction: column; align-items: center; justify-content: flex-start;
+              padding-top: 50px; transition: var(--transition); gap: 0;
+              overflow-y: auto;
+          }
+          .nav-links.active { left: 0; }
+          .nav-links li { margin: 15px 0; }
+          .hamburger { display: block; }
+          .nav-actions { gap: 16px; }
+          .dark-mode-toggle { width: 40px; height: 40px; font-size: 1rem; }
+          .hero h1 { font-size: 2.2rem; }
+          .hero p { font-size: 1.1rem; }
+          .about-content { flex-direction: column; }
+          .contact-container { flex-direction: column; }
+          .footer-content { flex-direction: column; }
+          .modal-container { padding: 10px; }
+          .close-modal { top: 10px; right: 15px; font-size: 30px; width: 40px; height: 40px; }
+          .contact-form { padding: 25px; }
+          .slider-container { height: 300px; }
+          .back-to-top { left: 15px; bottom: 20px; width: 45px; height: 45px; }
+          .achievement-card .achievement-number { font-size: 2.4rem; }
+      }
+
+      @media (max-width: 480px) {
+          .hero h1 { font-size: 1.8rem; }
+          .section-title { font-size: 1.8rem; }
+          .modal-container { padding: 5px; }
+          .close-modal { top: 5px; right: 10px; font-size: 25px; width: 35px; height: 35px; }
+          .slider-container { height: 250px; }
+          .nav-actions { gap: 14px; }
+          .dark-mode-toggle { width: 38px; height: 38px; font-size: 0.95rem; }
+      }
+  </style>
+</head>
+<body>
+    <div id="readingProgress" style="position:fixed;top:0;left:0;height:3px;background:var(--gradient);z-index:1001;width:0%;transition:width 0.1s linear;box-shadow:0 0 10px rgba(66,165,245,0.5);"></div>
+
+    <div class="animated-bg">
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+    </div>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <img src="https://septianfr.web.id/logo.png" alt="Loading...">
+        </div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+        <div class="loading-text">Memuat website...</div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-img">
+                        <img src="https://septianfr.web.id/logo.png" alt="Profile">
+                    </div>
+                    <div class="logo-text">septianfr</div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#experience">Pengalaman</a></li>
+                    <li><a href="#certificates">Sertifikat</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#now">Now</a></li>
+                    <li><a href="#changelog">Changelog</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" title="Mode Gelap/Terang">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hai, Saya <span>Septian Fathur Rohman</span></h1>
+                <p>Seorang Pelajar SMA yang Bersemangat dalam Pemrograman Web dan Teknologi</p>
+                <div class="hero-btns">
+                    <a href="#certificates" class="btn btn-primary"><i class="fas fa-certificate"></i> Lihat Sertifikat Saya</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-img fade-in">
+                    <img src="https://septianfr.web.id/logo.png" alt="About Me">
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Septian Fathur Rohman</h3>
+                    <p>Saya adalah pelajar SMA yang sangat tertarik dengan dunia pemrograman web. Saya mulai belajar coding sejak kelas 9 SMP dan terus mengembangkan keterampilan saya dalam HTML, CSS, JavaScript, PHP, MySQL dan kode pemrograman lainnya.</p>
+                    <div class="about-details">
+                        <p><i class="fas fa-user"></i> <strong>Usia:</strong> 17 Tahun</p>
+                        <p><i class="fas fa-birthday-cake"></i> <strong>Tempat/Tanggal Lahir:</strong> Bandung, 20 September 2009</p>
+                        <p><i class="fas fa-graduation-cap"></i> <strong>Pendidikan:</strong> SMA Negeri 1 Losarang</p>
+                        <p><i class="fas fa-heart"></i> <strong>Minat:</strong> Pemrograman Web, Desain UI/UX, Teknologi Terbaru</p>
+                        <p><i class="fas fa-gamepad"></i> <strong>Hobi:</strong> Ngoding, Main Bola, Membuat Hal Baru</p>
+                    </div>
+                    <p class="quote">"Saya percaya bahwa dengan teknologi, kita dapat menciptakan solusi inovatif untuk masa depan yang lebih baik."</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/628131657036"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/septianofc"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/_septianfr?igsh=MTRmMDFkbzN0MnhqcQ=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579377972764&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/septianofc"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievement-section" id="stats">
+        <div class="container">
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-number" data-target="8">8</div>
+                    <div class="achievement-label">Sertifikat Diperoleh</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-number" data-target="6">6</div>
+                    <div class="achievement-label">Proyek Selesai</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-number" data-target="3">3</div>
+                    <div class="achievement-label">Tahun Belajar Coding</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-number" data-target="10">10</div>
+                    <div class="achievement-label">Teknologi Dikuasai</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian Saya</h2>
+            <div class="skills-container">
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fab fa-html5"></i></div><h3>HTML</h3><p>Membangun struktur website yang semantik dan aksesibel.</p></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h3>CSS</h3><p>Mendesain tampilan website yang menarik dan responsif.</p></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fab fa-js"></i></div><h3>JavaScript</h3><p>Menambahkan interaktivitas dan fungsionalitas pada website.</p></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fab fa-php"></i></div><h3>PHP</h3><p>Membangun aplikasi web dinamis dengan backend yang kuat.</p></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fas fa-database"></i></div><h3>MySQL</h3><p>Mengelola dan merancang database untuk aplikasi web.</p></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fas fa-mobile-alt"></i></div><h3>Aplikasi</h3><p>Mengembangkan aplikasi untuk kebutuhan pengguna.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek Saya</h2>
+            <p style="text-align:center; color:var(--text-light); margin-bottom:40px; max-width:600px; margin-left:auto; margin-right:auto;">Beberapa proyek dan eksperimen digital yang telah saya kerjakan.</p>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">Aplikasi</button>
+                <button class="filter-btn" data-filter="design">Desain</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card" data-category="web">
+                    <div class="project-card-img"><i class="fas fa-globe"></i></div>
+                    <div class="project-card-body">
+                        <h3>Website Portofolio</h3>
+                        <p>Website portofolio pribadi dengan desain modern, animasi halus, dark mode, dan fitur pencarian cepat.</p>
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="project-links"><a href="https://septianfr.web.id" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a></div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-card-img"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="project-card-body">
+                        <h3>SFR Digital - PPOB</h3>
+                        <p>Platform penjualan pulsa, paket data, token listrik, dan pembayaran tagihan digital berbasis web.</p>
+                        <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+                        <div class="project-links"><a href="#contact"><i class="fas fa-info-circle"></i> Detail</a></div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-card-img"><i class="fas fa-robot"></i></div>
+                    <div class="project-card-body">
+                        <h3>Bot Telegram Otomatisasi</h3>
+                        <p>Bot Telegram untuk otomatisasi transaksi dan notifikasi. Dibangun dengan API Telegram dan PHP.</p>
+                        <div class="project-tags"><span>PHP</span><span>API</span><span>Telegram</span></div>
+                        <div class="project-links"><a href="https://t.me/septianofc" target="_blank"><i class="fab fa-telegram"></i> Coba</a></div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-card-img"><i class="fas fa-palette"></i></div>
+                    <div class="project-card-body">
+                        <h3>Desain Logo & Branding</h3>
+                        <p>Pembuatan logo dan identitas visual untuk brand SFR Digital dan beberapa proyek pribadi.</p>
+                        <div class="project-tags"><span>Desain Grafis</span><span>Branding</span></div>
+                        <div class="project-links"><a href="#contact"><i class="fas fa-eye"></i> Lihat</a></div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-card-img"><i class="fas fa-brain"></i></div>
+                    <div class="project-card-body">
+                        <h3>Eksperimen AI</h3>
+                        <p>Eksperimen penggunaan AI untuk membantu proses kreatif, pembuatan prototipe, dan otomatisasi.</p>
+                        <div class="project-tags"><span>AI</span><span>Otomatisasi</span></div>
+                        <div class="project-links"><a href="#contact"><i class="fas fa-flask"></i> Eksperimen</a></div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-card-img"><i class="fas fa-gamepad"></i></div>
+                    <div class="project-card-body">
+                        <h3>Top Up Game System</h3>
+                        <p>Sistem top up game otomatis dengan integrasi API pembayaran dan pengiriman item instan.</p>
+                        <div class="project-tags"><span>PHP</span><span>API</span><span>Payment</span></div>
+                        <div class="project-links"><a href="#contact"><i class="fas fa-info-circle"></i> Detail</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Pengalaman & Perjalanan</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 - Sekarang</span>
+                        <h4>Founder & Developer SFR Digital</h4>
+                        <div class="timeline-role">Web Development & Digital Business</div>
+                        <p>Membangun dan mengelola platform digital SFR Digital yang melayani penjualan pulsa, paket data, token listrik, dan pembayaran tagihan secara online.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023 - 2024</span>
+                        <h4>Freelance Web Developer</h4>
+                        <div class="timeline-role">Project-based</div>
+                        <p>Mengerjakan berbagai proyek website untuk teman, komunitas, dan UMKM lokal.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 - 2023</span>
+                        <h4>Mulai Belajar Pemrograman Web</h4>
+                        <div class="timeline-role">Self-taught & Online Courses</div>
+                        <p>Memulai perjalanan belajar coding dari HTML & CSS dasar, kemudian JavaScript, PHP, dan MySQL.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021 - 2022</span>
+                        <h4>First Line of Code</h4>
+                        <div class="timeline-role">Kelas 9 SMP</div>
+                        <p>Menulis baris kode pertama dan menemukan passion di dunia pemrograman.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Saya</h2>
+            <p style="text-align:center; color:var(--text-light); margin-bottom:50px; max-width:600px; margin-left:auto; margin-right:auto;">Beberapa layanan yang dapat saya bantu untuk kebutuhan digital Anda.</p>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Pembuatan website profesional, landing page, company profile, dan sistem berbasis web.</p>
+                    <div class="service-tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span></div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Desain UI/UX</h3>
+                    <p>Perancangan antarmuka dan pengalaman pengguna yang modern, intuitif, dan responsif.</p>
+                    <div class="service-tags"><span>UI Design</span><span>UX Research</span><span>Prototyping</span></div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Bot & Automation</h3>
+                    <p>Pengembangan bot Telegram, WhatsApp, dan sistem otomatisasi untuk kebutuhan bisnis.</p>
+                    <div class="service-tags"><span>Telegram Bot</span><span>API</span><span>Automation</span></div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-store"></i></div>
+                    <h3>Digital Business</h3>
+                    <p>Konsultasi dan pembuatan sistem penjualan digital seperti PPOB, top up game, dan payment gateway.</p>
+                    <div class="service-tags"><span>PPOB</span><span>Top Up</span><span>Payment</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <h2 class="section-title">Sertifikat Saya</h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--text-light);">Berikut adalah sertifikat-sertifikat yang telah saya peroleh selama belajar pemrograman:</p>
+            <div class="step-transaction">
+                <div class="slider-container">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="slide" data-index="0"><img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-lxs2tzt2hya8.jpg" alt="Belajar Dasar HTML dan CSS"></div>
+                        <div class="slide" data-index="1"><img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-kbfgaz2hlr0w.jpg" alt="Belajar Dasar CSS"></div>
+                        <div class="slide" data-index="2"><img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-zdaze9qidls7.jpg" alt="Belajar JavaScript Dasar"></div>
+                        <div class="slide" data-index="3"><img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-mx68heummdgu.jpg" alt="Belajar JQuery Dasar"></div>
+                        <div class="slide" data-index="4"><img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-x2yvifklmgux.jpg" alt="Belajar Bootstrap Framework"></div>
+                        <div class="slide" data-index="5"><img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-6rbz8782rm4v.jpg" alt="Belajar Pengunaan Database MySQL Pada Pemrograman PHP"></div>
+                        <div class="slide" data-index="6"><img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-iwtzebjp612v.jpg" alt="Belajar Database MySQL"></div>
+                        <div class="slide" data-index="7"><img src="https://cdn-media-uploads.flaspayku.biz.id/data.php?view=flaslink-inn2mek6obxh.jpg" alt="Security Course"></div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-indicators" id="indicators"></div>
+                    <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="view-all-btn">
+                    <a href="/sertifikat.html" target="_blank" class="btn btn-secondary"><i class="fas fa-th-large"></i> Lihat Semua Sertifikat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="certificateModal" class="certificate-modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-container">
+            <img class="modal-content" id="modalImage">
+        </div>
+    </div>
+
+    <section class="now-section" id="now">
+        <div class="container">
+            <h2 class="section-title">Sedang Saya Kerjakan</h2>
+            <p style="text-align:center; color:var(--text-light); margin-bottom:50px; max-width:600px; margin-left:auto; margin-right:auto;">Fokus dan aktivitas terkini saya per <span id="nowDate">2025</span>.</p>
+            <div class="now-grid">
+                <div class="now-card fade-in">
+                    <div class="now-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Membangun SFR Digital</h3>
+                    <p>Mengembangkan platform PPOB dan layanan digital SFR Digital dengan fitur-fitur baru yang lebih lengkap.</p>
+                    <span class="now-tag building"><i class="fas fa-hammer"></i> Building</span>
+                </div>
+                <div class="now-card fade-in">
+                    <div class="now-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Belajar Laravel & React</h3>
+                    <p>Mendalami framework Laravel untuk backend dan React.js untuk frontend.</p>
+                    <span class="now-tag learning"><i class="fas fa-graduation-cap"></i> Learning</span>
+                </div>
+                <div class="now-card fade-in">
+                    <div class="now-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Eksplorasi Desain UI/UX</h3>
+                    <p>Mengeksplorasi tren desain terbaru dan belajar tools seperti Figma.</p>
+                    <span class="now-tag learning"><i class="fas fa-graduation-cap"></i> Learning</span>
+                </div>
+                <div class="now-card fade-in">
+                    <div class="now-icon"><i class="fas fa-circle"></i></div>
+                    <h3>Status Ketersediaan</h3>
+                    <p>Terbuka untuk proyek freelance, kolaborasi, dan diskusi seputar pengembangan web.</p>
+                    <span class="now-tag online">Online</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimoni</h2>
+            <p style="text-align:center; color:var(--text-light); margin-bottom:50px; max-width:600px; margin-left:auto; margin-right:auto;">Ulasan dan pengalaman dari orang-orang yang pernah bekerja sama dengan saya.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <p>Terima kasih Septian sudah membantu membuat website untuk usaha saya. Hasilnya rapi, cepat, dan sesuai dengan yang saya minta. Recommended!</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="testimonial-info"><strong>Andi</strong><small>Pemilik UMKM</small></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p>Bot Telegram yang dibuat sangat membantu otomatisasi transaksi di komunitas kami. Respon cepat dan hasilnya memuaskan.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div class="testimonial-info"><strong>Rizky</strong><small>Admin Komunitas</small></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p>Septian adalah developer muda yang berbakat. Meskipun masih pelajar, kemampuannya dalam membuat website sudah di atas rata-rata.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">D</div>
+                        <div class="testimonial-info"><strong>Dewi</strong><small>Guru TIK</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="changelog-section" id="changelog">
+        <div class="container">
+            <h2 class="section-title">Changelog</h2>
+            <p style="text-align:center; color:var(--text-light); margin-bottom:50px; max-width:600px; margin-left:auto; margin-right:auto;">Riwayat pembaruan website dan proyek-proyek saya.</p>
+            <div class="changelog-list">
+                <div class="changelog-item fade-in">
+                    <div class="changelog-date"><div class="date-badge"><span>19</span><small>Okt</small></div></div>
+                    <div class="changelog-content">
+                        <h4>Pembaruan Besar Website <span class="badge new">NEW</span></h4>
+                        <p>Menambahkan fitur Dark Mode, Command Palette (Ctrl+K), halaman Now, Changelog, Testimoni, Services, Timeline Pengalaman, dan banyak fitur baru lainnya.</p>
+                    </div>
+                </div>
+                <div class="changelog-item fade-in">
+                    <div class="changelog-date"><div class="date-badge"><span>15</span><small>Jan</small></div></div>
+                    <div class="changelog-content">
+                        <h4>Penambahan Section Proyek <span class="badge update">UPDATE</span></h4>
+                        <p>Menambahkan galeri proyek dengan filter kategori dan deskripsi detail untuk setiap proyek.</p>
+                    </div>
+                </div>
+                <div class="changelog-item fade-in">
+                    <div class="changelog-date"><div class="date-badge"><span>10</span><small>Sept</small></div></div>
+                    <div class="changelog-content">
+                        <h4>Perbaikan Tampilan Mobile <span class="badge fix">FIX</span></h4>
+                        <p>Memperbaiki tampilan navigasi di perangkat mobile, memastikan semua menu dapat diakses dengan baik.</p>
+                    </div>
+                </div>
+                <div class="changelog-item fade-in">
+                    <div class="changelog-date"><div class="date-badge"><span>06</span><small>Juni</small></div></div>
+                    <div class="changelog-content">
+                        <h4>Peluncuran Website <span class="badge new">NEW</span></h4>
+                        <p>Website portofolio septianfr.web.id resmi diluncurkan dengan halaman Home, About, Skills, Certificates, dan Contact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code Section - FIX -->
+    <section class="qr-section" id="qr">
+        <div class="container">
+            <div class="qr-container">
+                <h3>Scan untuk Membuka Portofolio</h3>
+                <p>Bagikan halaman ini dengan mudah melalui QR code di bawah ini. QR code berisi URL portofolio resmi.</p>
+                <div class="qr-code-wrapper">
+                    <div id="qrcode"></div>
+                </div>
+                <div class="qr-actions">
+                    <button class="btn btn-primary" id="downloadQRBtn"><i class="fas fa-download"></i> Unduh QR</button>
+                    <button class="btn btn-secondary" id="copyLinkBtn"><i class="fas fa-copy"></i> Salin Link</button>
+                </div>
+                <p class="qr-url">Atau kunjungi langsung: <strong>septianfr.web.id</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Mari Berkolaborasi!</h3>
+                    <p>Jika Anda tertarik dengan karya saya atau ingin berdiskusi tentang proyek, jangan ragu untuk menghubungi saya.</p>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-item"><h4>Lokasi</h4><p>Jl. PUK Muntur, Ranjeng, Indonesia 45253</p></div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-item"><h4>Email</h4><p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d2a1b7a2a6bbb3bcbdb4b1e392b5bfb3bbbefcb1bdbf">[email&#160;protected]</a></p></div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-item"><h4>Telepon</h4><p>+62 813-1657-036</p></div>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="https://wa.me/628131657036" target="_blank" class="btn btn-primary" style="background-color: #25D366; border-color: #25D366;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://t.me/septianofc" target="_blank" class="btn btn-primary" style="background-color: #0088cc; border-color: #0088cc;"><i class="fab fa-telegram"></i> Telegram</a>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group"><label for="name">Nama Lengkap</label><input type="text" id="name" class="form-control" required></div>
+                        <div class="form-group"><label for="email">Email</label><input type="email" id="email" class="form-control" required></div>
+                        <div class="form-group"><label for="subject">Subjek</label><input type="text" id="subject" class="form-control" required></div>
+                        <div class="form-group"><label for="message">Pesan</label><textarea id="message" class="form-control" required></textarea></div>
+                        <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Tentang Saya</h4>
+                    <p>Saya adalah pelajar SMA yang bersemangat dalam pemrograman web dan teknologi. Saya memiliki minat dalam pengembangan front-end dan back-end.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/628131657036"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/septianofc"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/_septianfr?igsh=MTRmMDFkbzN0MnhqcQ=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579377972764&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/septianofc"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Link Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Tentang Saya</a></li>
+                        <li><a href="#skills">Keahlian</a></li>
+                        <li><a href="#projects">Proyek</a></li>
+                        <li><a href="#experience">Pengalaman</a></li>
+                        <li><a href="#certificates">Sertifikat</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Halaman Lain</h4>
+                    <ul class="footer-links">
+                        <li><a href="#now">Now Page</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                        <li><a href="#qr">QR Code</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Septian Fathur Rohman. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script>
+        // =========================================================
+        // DARK MODE - FIX dengan getSavedTheme/saveTheme yang aman
+        // =========================================================
+        function getSavedTheme() {
+            try {
+                return localStorage.getItem('theme');
+            } catch (error) {
+                return null;
+            }
+        }
+
+        function saveTheme(theme) {
+            try {
+                localStorage.setItem('theme', theme);
+            } catch (error) {
+                // Tema tetap berubah meskipun penyimpanan tidak tersedia.
+            }
+        }
+
+        (function initDarkMode() {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const darkModeIcon = darkModeToggle.querySelector('i');
+            const body = document.body;
+
+            function applyTheme(isDark) {
+                if (isDark) {
+                    body.classList.add('dark-mode');
+                    darkModeIcon.classList.remove('fa-moon');
+                    darkModeIcon.classList.add('fa-sun');
+                    darkModeToggle.setAttribute('aria-label', 'Aktifkan Mode Terang');
+                    darkModeToggle.setAttribute('title', 'Aktifkan Mode Terang');
+                    const metaTheme = document.querySelector('meta[name="theme-color"]');
+                    if (metaTheme) metaTheme.setAttribute('content', '#0f172a');
+                } else {
+                    body.classList.remove('dark-mode');
+                    darkModeIcon.classList.remove('fa-sun');
+                    darkModeIcon.classList.add('fa-moon');
+                    darkModeToggle.setAttribute('aria-label', 'Aktifkan Mode Gelap');
+                    darkModeToggle.setAttribute('title', 'Aktifkan Mode Gelap');
+                    const metaTheme = document.querySelector('meta[name="theme-color"]');
+                    if (metaTheme) metaTheme.setAttribute('content', '#42a5f5');
+                }
+            }
+
+            const savedTheme = getSavedTheme();
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const isDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
+            applyTheme(isDark);
+
+            darkModeToggle.addEventListener('click', () => {
+                const nowDark = !body.classList.contains('dark-mode');
+                applyTheme(nowDark);
+                saveTheme(nowDark ? 'dark' : 'light');
+            });
+        })();
+
+        // =========================================================
+        // ACHIEVEMENT COUNTER - FIX (angka & label selalu tampil,
+        // animasi berjalan, fallback jika gagal)
+        // =========================================================
+        (function initAchievementCounters() {
+            const cards = document.querySelectorAll('.achievement-number');
+            if (!cards.length) return;
+
+            function animateCounter(el) {
+                const targetStr = el.getAttribute('data-target');
+                const target = parseInt(targetStr, 10);
+                if (isNaN(target)) return;
+
+                el.style.visibility = 'visible';
+                el.style.opacity = '1';
+
+                const duration = 1500;
+                const startTime = performance.now();
+
+                function step(now) {
+                    const elapsed = now - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.floor(target * eased);
+                    el.textContent = String(current);
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        el.textContent = String(target);
+                    }
+                }
+
+                el.textContent = '0';
+                requestAnimationFrame(step);
+            }
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounter(entry.target);
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.4 });
+                cards.forEach(el => observer.observe(el));
+            } else {
+                cards.forEach(el => animateCounter(el));
+            }
+
+            // FALLBACK: jika setelah 3 detik angka masih "0", paksa tampilkan angka final
+            setTimeout(() => {
+                cards.forEach(el => {
+                    if (el.textContent.trim() === '0' || el.textContent.trim() === '') {
+                        const target = el.getAttribute('data-target');
+                        if (target) el.textContent = target;
+                    }
+                });
+            }, 3000);
+        })();
+
+        // =========================================================
+        // QR CODE - FIX: hanya satu QR tampil, unduh PNG benar, salin link
+        // =========================================================
+        (function initQRCode() {
+            const qrContainer = document.getElementById('qrcode');
+            const downloadBtn = document.getElementById('downloadQRBtn');
+            const copyBtn = document.getElementById('copyLinkBtn');
+            const PORTFOLIO_URL = 'https://septianfr.web.id/';
+
+            if (!qrContainer) return;
+
+            let qrReady = false;
+
+            function showMessage(icon, title, text) {
+                if (typeof Swal !== 'undefined') {
+                    Swal.fire({ icon, title, text });
+                } else {
+                    alert(title + '\n' + text);
+                }
+            }
+
+            function createQR() {
+                if (typeof QRCode === 'undefined') return false;
+
+                if (qrReady && qrContainer.querySelector('canvas')) return true;
+
+                qrContainer.replaceChildren();
+
+                try {
+                    new QRCode(qrContainer, {
+                        text: PORTFOLIO_URL,
+                        width: 400,
+                        height: 400,
+                        colorDark: '#111827',
+                        colorLight: '#ffffff',
+                        correctLevel: QRCode.CorrectLevel.H
+                    });
+
+                    const canvas = qrContainer.querySelector('canvas');
+
+                    if (!canvas) {
+                        qrContainer.replaceChildren();
+                        return false;
+                    }
+
+                    const generatedImage = qrContainer.querySelector('img');
+                    if (generatedImage) generatedImage.remove();
+
+                    qrReady = true;
+                    return true;
+                } catch (error) {
+                    qrContainer.replaceChildren();
+                    return false;
+                }
+            }
+
+            if (!createQR()) {
+                qrContainer.textContent = 'QR Code sedang dimuat. Silakan coba lagi.';
+            }
+
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', async function () {
+                    if (!createQR()) {
+                        showMessage('error', 'QR belum siap', 'Periksa koneksi internet lalu muat ulang halaman.');
+                        return;
+                    }
+
+                    const canvas = qrContainer.querySelector('canvas');
+                    if (!canvas) {
+                        showMessage('error', 'Gagal', 'Canvas QR tidak ditemukan.');
+                        return;
+                    }
+
+                    const originalHTML = downloadBtn.innerHTML;
+                    downloadBtn.disabled = true;
+                    downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Menyiapkan PNG...';
+
+                    let objectURL = null;
+
+                    try {
+                        const blob = await new Promise((resolve, reject) => {
+                            canvas.toBlob(result => {
+                                if (result) resolve(result);
+                                else reject(new Error('PNG tidak dapat dibuat.'));
+                            }, 'image/png');
+                        });
+
+                        objectURL = URL.createObjectURL(blob);
+
+                        const link = document.createElement('a');
+                        link.href = objectURL;
+                        link.download = 'septianfr-qrcode.png';
+                        link.style.display = 'none';
+                        document.body.appendChild(link);
+                        link.click();
+                        link.remove();
+
+                        showMessage(
+                            'info',
+                            'Unduhan dimulai',
+                            'Jika file tidak tersimpan otomatis, buka tautan gambar di tab baru atau izinkan unduhan di browser.'
+                        );
+                    } catch (error) {
+                        try {
+                            const dataURL = canvas.toDataURL('image/png');
+                            const tab = window.open(dataURL, '_blank');
+
+                            if (!tab) {
+                                showMessage('warning', 'Unduhan diblokir', 'Izinkan pop-up browser, lalu coba unduh lagi.');
+                            } else {
+                                showMessage('info', 'QR siap disimpan', 'Pada tab gambar yang terbuka, gunakan menu browser untuk mengunduh atau menyimpan gambar.');
+                            }
+                        } catch (fallbackError) {
+                            showMessage('error', 'Gagal membuat PNG', 'Coba gunakan browser lain atau periksa pengaturan unduhan.');
+                        }
+                    } finally {
+                        downloadBtn.disabled = false;
+                        downloadBtn.innerHTML = originalHTML;
+
+                        if (objectURL) {
+                            setTimeout(() => URL.revokeObjectURL(objectURL), 60000);
+                        }
+                    }
+                });
+            }
+
+            if (copyBtn) {
+                copyBtn.addEventListener('click', async function () {
+                    try {
+                        if (navigator.clipboard && window.isSecureContext) {
+                            await navigator.clipboard.writeText(PORTFOLIO_URL);
+                        } else {
+                            const input = document.createElement('textarea');
+                            input.value = PORTFOLIO_URL;
+                            input.style.position = 'fixed';
+                            input.style.opacity = '0';
+                            document.body.appendChild(input);
+                            input.select();
+
+                            const copied = document.execCommand('copy');
+                            input.remove();
+
+                            if (!copied) throw new Error('Salin otomatis gagal.');
+                        }
+
+                        showMessage('success', 'Link disalin', PORTFOLIO_URL);
+                    } catch (error) {
+                        showMessage('error', 'Gagal menyalin', 'Salin alamat ini secara manual: ' + PORTFOLIO_URL);
+                    }
+                });
+            }
+        })();
+
+        // =========================================================
+        // KODE ASLI LAINNYA
+        // =========================================================
+        const RECAPTCHA_SITE_KEY = '6LdgntEtAAAAAKMPC-1H_Qb901PCbOXdSxlKlFgp';
+
+        const loadingScreen = document.getElementById('loadingScreen');
+        const loadingProgress = document.querySelector('.loading-progress');
+        const loadingText = document.querySelector('.loading-text');
+
+        let progress = 0;
+        const loadingInterval = setInterval(() => {
+            progress += Math.random() * 15;
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(loadingInterval);
+                setTimeout(() => {
+                    loadingScreen.classList.add('hidden');
+                    initAnimations();
+                }, 1200);
+            }
+            loadingProgress.style.width = `${progress}%`;
+        }, 200);
+
+        function initAnimations() {
+            if (typeof gsap !== 'undefined') {
+                gsap.registerPlugin(ScrollTrigger);
+                gsap.utils.toArray('.fade-in').forEach(element => {
+                    gsap.fromTo(element, { opacity: 0, y: 50 }, {
+                        opacity: 1, y: 0, duration: 0.8,
+                        scrollTrigger: { trigger: element, start: "top 80%", end: "bottom 20%", toggleActions: "play none none reverse" }
+                    });
+                });
+                gsap.from('.hero h1', { duration: 1, y: 50, opacity: 0, ease: "power3.out" });
+                gsap.from('.hero p', { duration: 1, y: 30, opacity: 0, delay: 0.3, ease: "power3.out" });
+                gsap.from('.hero-btns', { duration: 1, y: 30, opacity: 0, delay: 0.6, ease: "power3.out" });
+            }
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            });
+        }
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
+                }
+            });
+        });
+
+        const sliderTrack = document.getElementById('sliderTrack');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicatorsContainer = document.getElementById('indicators');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        const certificatesData = [
+            { title: "Belajar Dasar HTML dan CSS", desc: "Sertifikat kelulusan dari kursus dasar HTML dan CSS.", link: "#" },
+            { title: "Belajar Dasar CSS", desc: "Sertifikat kelulusan dari kursus dasar CSS.", link: "#" },
+            { title: "Belajar JavaScript Dasar", desc: "Sertifikat kelulusan dari kursus dasar JavaScript.", link: "#" },
+            { title: "Belajar JQuery Dasar", desc: "Sertifikat kelulusan dari kursus dasar JQuery.", link: "#" },
+            { title: "Belajar Bootstrap Framework", desc: "Sertifikat kelulusan dari kursus Bootstrap Framework.", link: "#" },
+            { title: "Belajar Penggunaan Database MySQL pada Pemrograman PHP", desc: "Sertifikat kelulusan dari kursus MySQL dengan PHP.", link: "#" },
+            { title: "Belajar Database MySQL", desc: "Sertifikat kelulusan dari kursus dasar MySQL.", link: "#" },
+            { title: "Security Course", desc: "Sertifikat kelulusan dari kursus keamanan web.", link: "#" }
+        ];
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (i === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => goToSlide(i));
+            indicatorsContainer.appendChild(indicator);
+        }
+        function updateSliderPosition() {
+            sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            document.querySelectorAll('.indicator').forEach((ind, index) => ind.classList.toggle('active', index === currentSlide));
+            prevBtn.classList.toggle('disabled', currentSlide === 0);
+            nextBtn.classList.toggle('disabled', currentSlide === totalSlides - 1);
+        }
+        function goToSlide(i) { currentSlide = i; updateSliderPosition(); }
+        nextBtn.addEventListener('click', () => { if (currentSlide < totalSlides - 1) { currentSlide++; updateSliderPosition(); } });
+        prevBtn.addEventListener('click', () => { if (currentSlide > 0) { currentSlide--; updateSliderPosition(); } });
+        let slideInterval = setInterval(() => { currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0; updateSliderPosition(); }, 5000);
+        sliderTrack.addEventListener('mouseenter', () => clearInterval(slideInterval));
+        sliderTrack.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(() => { currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0; updateSliderPosition(); }, 5000);
+        });
+        slides.forEach(slide => {
+            slide.addEventListener('click', function() {
+                const imgSrc = this.querySelector('img').src;
+                const index = parseInt(this.getAttribute('data-index'));
+                openCertificateModal(imgSrc, index);
+            });
+        });
+        updateSliderPosition();
+
+        const modal = document.getElementById('certificateModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeModal = document.querySelector('.close-modal');
+        function openCertificateModal(imageSrc, index) {
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                const certData = certificatesData[index];
+                if (typeof Swal !== 'undefined') {
+                    Swal.fire({
+                        title: certData.title,
+                        html: `<div style="text-align:left;"><p>${certData.desc}</p><p><strong>Urutan:</strong> ${index + 1} dari ${totalSlides}</p></div>`,
+                        icon: 'info', showCancelButton: true, confirmButtonText: 'Lihat di Website', cancelButtonText: 'Tutup'
+                    });
+                }
+            }, 300);
+        }
+        closeModal.addEventListener('click', () => { modal.style.display = 'none'; document.body.style.overflow = 'auto'; });
+        window.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display = 'none'; document.body.style.overflow = 'auto'; } });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.style.display === 'block') { modal.style.display = 'none'; document.body.style.overflow = 'auto'; } });
+
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            if (!name || !email || !subject || !message) { Swal.fire("Peringatan!", "Semua field wajib diisi.", "warning"); return; }
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalBtnHTML = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memverifikasi...';
+            submitBtn.disabled = true;
+            grecaptcha.ready(function() {
+                grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'contact_form' }).then(function(token) {
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
+                    const formData = new URLSearchParams();
+                    formData.append('name', name); formData.append('email', email);
+                    formData.append('subject', subject); formData.append('message', message);
+                    formData.append('recaptcha_token', token);
+                    fetch("send.php", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: formData.toString() })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.success) { Swal.fire("Berhasil!", data.message || "Pesan terkirim.", "success"); contactForm.reset(); }
+                        else { Swal.fire("Gagal!", data.message || "Pesan gagal dikirim.", "error"); }
+                        submitBtn.innerHTML = originalBtnHTML; submitBtn.disabled = false;
+                    }).catch(() => {
+                        Swal.fire("Error!", "Terjadi kesalahan saat mengirim pesan.", "error");
+                        submitBtn.innerHTML = originalBtnHTML; submitBtn.disabled = false;
+                    });
+                }).catch(() => {
+                    Swal.fire("Error!", "Gagal memuat reCAPTCHA.", "error");
+                    submitBtn.innerHTML = originalBtnHTML; submitBtn.disabled = false;
+                });
+            });
+        });
+
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => { backToTop.classList.toggle('active', window.pageYOffset > 300); });
+        backToTop.addEventListener('click', (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+        (function initRecaptchaBadge() {
+            let expanded = false; let overlay = null;
+            function findBadge() { return document.querySelector('.grecaptcha-badge'); }
+            function createOverlay() {
+                if (overlay) return;
+                overlay = document.createElement('div');
+                overlay.id = 'recaptchaTouchOverlay';
+                overlay.style.cssText = 'position:fixed;width:70px;height:60px;right:15px;bottom:20px;z-index:9999;background:transparent;cursor:pointer;border-radius:6px;';
+                overlay.addEventListener('click', function(e) {
+                    e.preventDefault(); e.stopPropagation();
+                    const badge = findBadge(); if (!badge) return;
+                    if (!expanded) {
+                        badge.classList.remove('recaptcha-closing');
+                        badge.classList.add('recaptcha-expanded');
+                        expanded = true;
+                        setTimeout(() => { if (overlay) overlay.style.display = 'none'; }, 400);
+                    }
+                });
+                document.body.appendChild(overlay);
+            }
+            function collapseBadge() {
+                const badge = findBadge(); if (!badge) return;
+                badge.classList.remove('recaptcha-expanded');
+                badge.classList.add('recaptcha-closing');
+                expanded = false;
+                setTimeout(() => { badge.classList.remove('recaptcha-closing'); if (overlay) overlay.style.display = 'block'; }, 350);
+            }
+            const observer = new MutationObserver(() => { const badge = findBadge(); if (badge && !overlay) createOverlay(); });
+            observer.observe(document.body, { childList: true, subtree: true });
+            setTimeout(() => { if (findBadge()) createOverlay(); }, 1500);
+            document.addEventListener('click', function(e) {
+                const badge = findBadge(); if (!badge || !expanded) return;
+                const rect = badge.getBoundingClientRect();
+                const inside = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
+                if (!inside) collapseBadge();
+            }, true);
+        })();
+
+        const readingProgress = document.getElementById('readingProgress');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            readingProgress.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + '%';
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                document.querySelectorAll('.project-card').forEach(card => {
+                    const cat = card.getAttribute('data-category');
+                    card.style.display = (filter === 'all' || cat === filter) ? 'block' : 'none';
+                });
+            });
+        });
+
+        const nowDateEl = document.getElementById('nowDate');
+        if (nowDateEl) {
+            const now = new Date();
+            const months = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+            nowDateEl.textContent = `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
+        }
+    </script>
+<script>window.__CF$cv$params={r:'a5b820943ad52ded',t:'MTc5NDg0OTIxNg==',u:'01a1d861add271cfb077c2938bb44bec',ut:'WTo4PnRw14F0kwRPXwqNg9KZBBT5N06sWYUdQ4RXrxI-1794849216-1.2.1.1-X_ko2YYWa0z1xYXkBBX1v.tNDWRW.XJOBlEC5sh8nYXOooQrRs3UqQdDXcolWx5kYMtU2aRrRp9MZ_63hJLCbt0xFITP8QCo_iI31ry6f_s',i:60};(function(){if(!document.body)return;var l=window.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/precursor/main.js?ray=a5b820943ad52ded',s=document.createElement('script');s.src=o?new URL(u,o).href:u;document.head.appendChild(s);})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"034108e8af21447c946a2487b980d015","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
